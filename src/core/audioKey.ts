@@ -20,6 +20,7 @@ const TTS_FIXES: [RegExp, string][] = [
   [/чу́?вств/gi, 'чу́ств'],
   [/со́?лнц/gi, 'со́нц'],
   [/ску́?чно/gi, 'ску́шно'],
+  [/пра́?здни/gi, 'пра́зни'],
   [/шестьдеся́?т/gi, 'шыздися́т'],
   [/коне́?чно/gi, 'коне́шно'],
   // hundreds: unstressed vowels are reduced, the soft sign is not pronounced
