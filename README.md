@@ -5,6 +5,8 @@ Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem
 
 ## Stand: v0.4 – Alphabet, Vokabeltrainer, Einheit 1, Aussprache & Statistik
 
+**Neu: Einheit 2 „Семья́“ (Familie & Menschen)** – 5 Lektionen + Checkpoint: Genus, мой/моя́/моё, у меня́ есть / нет, Berufe und в + Ort, Alter (год/го́да/лет), Plural. 47 neue Kurswörter, 105 neue Aufnahmen.
+
 **Neu in v0.4:**
 - **Spracherkennung mit Auswertung:** „Sprechen & prüfen“ in jeder Lektion und im neuen **Aussprache-Trainer** (Nachschlagen). Ergebnis in Prozent, Buchstaben grün/rot, erkannter Text und konkrete Tipps zu typischen Fehlern Deutschsprachiger (ы, р, х, ж, щ, ц, weiche Konsonanten, Betonung).
 - Zwei Erkennungen: **Safari** (eingebaut, online) und **Whisper offline** (läuft komplett auf dem Gerät, einmalig 76 MB). „Automatisch“ wählt passend zur Verbindung.

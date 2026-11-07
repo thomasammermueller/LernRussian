@@ -12,7 +12,7 @@ import { lessonSteps } from '../src/features/lesson/LessonPage';
 describe('lessons', () => {
   it('have unique ids and a checkpoint per unit', () => {
     expect(new Set(ALL_LESSONS.map((l) => l.id)).size).toBe(ALL_LESSONS.length);
-    expect(ALL_LESSONS.filter((l) => l.checkpoint).map((l) => l.id)).toContain('1.C');
+    expect(ALL_LESSONS.filter((l) => l.checkpoint).map((l) => l.id)).toEqual(['1.C', '2.C']);
   });
   it('only reference vocabulary that exists in the word lists', () => {
     for (const l of ALL_LESSONS) for (const ru of l.vocab) expect(wordByRu(ru), `${l.id}: ${ru}`).toBeDefined();
@@ -50,7 +50,7 @@ describe('lessons', () => {
         for (const line of d.lines) {
           for (const token of line.ru.split(/[\s,.!?…—]+/).filter(Boolean)) {
             const syl = (stripStress(token).toLowerCase().match(/[аеёиоуыэюя]/g) ?? []).length;
-            const exempt = ['до', 'не', 'по-ру́сски', 'Шмидт'].includes(token);
+            const exempt = ['до', 'не', 'по-ру́сски', 'Шмидт', 'Класс'].includes(token);
             if (syl > 1 && !exempt) expect(token.includes('́') || /ё/i.test(token), `${l.id}: ${token}`).toBe(true);
           }
         }

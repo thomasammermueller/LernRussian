@@ -54,8 +54,13 @@ async function addLessonWords(l: Lesson) {
   return added;
 }
 
-export default function LessonPage() {
+/** Remounts the lesson for every id, so no state (step index, answers) leaks from one lesson into the next. */
+export default function LessonRoute() {
   const { id = '' } = useParams();
+  return <LessonPage key={id} id={id} />;
+}
+
+function LessonPage({ id }: { id: string }) {
   const lesson = lessonById(id);
   const navigate = useNavigate();
   const steps = useMemo(() => (lesson ? lessonSteps(lesson) : []), [lesson]);
