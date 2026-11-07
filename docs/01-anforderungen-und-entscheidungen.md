@@ -37,7 +37,7 @@
 | Aussprachebewertung | Web Speech API (online, kostenlos) + Whisper im Browser als Fallback | Keine Kosten; Azure Pronunciation Assessment wäre genauer, kostet aber. |
 | Lern-Reminder | Kalender-Abo (.ics) im MVP, Web-Push später | iOS-Web-Push braucht einen Server; ein wiederkehrender Kalendertermin mit Alarm ist kostenlos und zuverlässig. |
 | Design | Ruhig, erwachsen, wenig Gamification | Erwachsene Lerner wollen Fortschritt sehen, nicht Comic-Figuren. Streak + Tagesziel reichen. |
-| Hosting | GitHub Pages | Kostenlos, Deploy per GitHub Action. |
+| Hosting | Cloudflare Pages | Kostenlos, Deploy bei jedem Push, Vorschau pro PR. |
 | Erweiterbarkeit | Feature-Module + Content-Packs | Neue Bereiche (z. B. B1, Lesetexte, Übersetzungs-API) können ohne Umbau ergänzt werden. Kein Premium/Multiplayer-Ballast. |
 
 ## Besonderheiten erwachsener Anfänger (Designprinzipien)
@@ -54,7 +54,7 @@
 
 | Posten | Kosten |
 |---|---|
-| Hosting (GitHub Pages) | 0 € |
+| Hosting (Cloudflare Pages) | 0 € |
 | Domain | 0 € (`<user>.github.io/LernRussian`) |
 | Audio (Silero/Piper/Lingua Libre/Tatoeba) | 0 € |
 | Spracherkennung (Web Speech API / Whisper lokal) | 0 € |

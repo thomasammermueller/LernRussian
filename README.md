@@ -43,8 +43,12 @@ Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem
 
 ## Auf dem iPhone nutzen
 
-1. Diesen Branch nach `main` übernehmen.
-2. Einmalig auf GitHub unter *Settings → Pages → Source* „**GitHub Actions**“ wählen. Danach baut und veröffentlicht jeder Push auf `main` die App automatisch (`.github/workflows/deploy.yml`).
+1. **Cloudflare Pages** mit dem Repository verbinden (*Workers & Pages → Create → Pages → Connect to Git*) mit:
+   - Production branch: `main`
+   - Build command: `npm run build`
+   - Build output directory: `dist` (steht auch in `wrangler.toml`)
+   - Node-Version kommt aus `.nvmrc` (22)
+2. Jeder Push auf `main` veröffentlicht die App, jeder PR bekommt eine Vorschau-URL. Die GitHub Action `ci.yml` führt Tests und Build für jeden PR aus.
 3. Die Seite in **Safari** öffnen → Teilen → „**Zum Home-Bildschirm**“.
 4. Optional: unter *Fortschritt → Einstellungen* Sync (GitHub-Token mit Recht `gist`), Erinnerung und Offline-Spracherkennung einrichten.
 
@@ -67,6 +71,8 @@ npx vite-node tools/tts/collect.ts
 python3 tools/tts/generate.py --voices <ordner>
 ```
 
+Die Offline-Spracherkennung lädt transformers.js und die ONNX-Laufzeit beim ersten Einschalten von jsDelivr (und das Whisper-Modell von Hugging Face); der Service Worker cacht beides. So bleibt jede Datei im Build unter dem 25-MiB-Limit von Cloudflare Pages.
+
 Aussprachekorrekturen für die Sprachsynthese (stumme Buchstaben, unbetonte Präpositionen) stehen in `src/core/audioKey.ts`.
 
 **Inhalte erweitern:** Lektionen liegen in `src/content/lessons/unitN.ts`, Vokabeln in `src/content/vocab.ts`. Die Tests prüfen u. a. Betonungszeichen, Lösbarkeit aller Übungen, bekannte Sprecher, Lautschrift und Audio-Vollständigkeit.
@@ -84,4 +90,4 @@ Aussprachekorrekturen für die Sprachsynthese (stumme Buchstaben, unbetonte Prä
 
 ## Technik in Kürze
 
-React 19 + TypeScript + Vite · Tailwind CSS · PWA (vite-plugin-pwa/Workbox) · Dexie (IndexedDB) · ts-fsrs · Papa Parse · transformers.js (Whisper) · Piper TTS · Vitest + Playwright · GitHub Pages
+React 19 + TypeScript + Vite · Tailwind CSS · PWA (vite-plugin-pwa/Workbox) · Dexie (IndexedDB) · ts-fsrs · Papa Parse · transformers.js (Whisper) · Piper TTS · Vitest + Playwright · Cloudflare Pages

@@ -33,15 +33,13 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,json,m4a}'],
-        // Whisper runtime (only downloaded when offline recognition is enabled) – not precached.
-        globIgnores: ['**/*.wasm', 'ort/**'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {
-            // Offline speech recognition runtime – cached on first use.
-            urlPattern: ({ url }) => url.pathname.includes('/ort/'),
+            // Offline speech recognition (transformers.js + ONNX runtime from the CDN) – cached on first use.
+            urlPattern: ({ url }) => url.hostname === 'cdn.jsdelivr.net',
             handler: 'CacheFirst',
-            options: { cacheName: 'onnxruntime', expiration: { maxEntries: 10 } },
+            options: { cacheName: 'speech-runtime', expiration: { maxEntries: 20 }, cacheableResponse: { statuses: [0, 200] } },
           },
           {
             urlPattern: ({ url }) => url.pathname.includes('/audio/'),

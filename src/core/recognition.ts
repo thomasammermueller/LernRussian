@@ -63,6 +63,8 @@ function listenWebSpeech(maxMs: number): ListenSession {
 
 // ---------- Whisper (local) ----------
 export const WHISPER_MODEL = 'onnx-community/whisper-base';
+/** Exact version: keep in sync with the devDependency used for the types. */
+export const TRANSFORMERS_URL = 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.2/dist/transformers.min.js';
 export const WHISPER_SIZE_MB = 76;
 
 type Asr = (audio: Float32Array, opts: Record<string, unknown>) => Promise<{ text: string }>;
@@ -72,14 +74,12 @@ let asrPromise: Promise<Asr> | null = null;
 export function loadWhisper(onProgress?: (p: number) => void): Promise<Asr> {
   if (!asrPromise) {
     asrPromise = (async () => {
-      const { pipeline, env } = await import('@huggingface/transformers');
+      // Loaded from the CDN on first use (not bundled): the ONNX runtime it needs is ~27 MB,
+      // too large for static hosts with a 25 MiB file limit. The service worker caches both.
+      const { pipeline, env } = (await import(/* @vite-ignore */ TRANSFORMERS_URL)) as typeof import('@huggingface/transformers');
       env.allowLocalModels = false;
-      // Use our own copy of the ONNX runtime (see tools/copy-ort.mjs) instead of a CDN.
       const wasm = env.backends.onnx.wasm;
-      if (wasm) {
-        wasm.wasmPaths = new URL('./ort/', window.location.href).href;
-        if (!window.crossOriginIsolated) wasm.numThreads = 1;
-      }
+      if (wasm && !window.crossOriginIsolated) wasm.numThreads = 1;
       const files = new Map<string, { loaded: number; total: number }>();
       const asr = await pipeline('automatic-speech-recognition', WHISPER_MODEL, {
         dtype: 'q8',

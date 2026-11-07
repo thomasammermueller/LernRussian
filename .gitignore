@@ -3,4 +3,3 @@ dist
 dev-dist
 *.tsbuildinfo
 .DS_Store
-public/ort

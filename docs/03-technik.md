@@ -26,7 +26,7 @@ Die PWA läuft auf dem iPhone im Vollbild mit eigenem Icon, startet offline, kan
 | Diagramme | **Chart.js** (react-chartjs-2) | Leicht, gut auf Mobilgeräten |
 | Content-Validierung | **Zod** | Inhalte werden beim Build geprüft |
 | Tests | Vitest + Playwright | Logik + End-to-End (iPhone-Viewport) |
-| Hosting | **GitHub Pages** + GitHub Actions | Kostenlos, automatisches Deploy bei Push |
+| Hosting | **Cloudflare Pages** (+ GitHub Actions für Tests) | Kostenlos, automatisches Deploy bei Push |
 
 ## 3.3 Architektur
 
