@@ -3,6 +3,8 @@ import { db, exportBackup, importBackup, today, type Backup } from '../../core/d
 import { WHISPER_SIZE_MB, loadWhisper, webSpeechAvailable, whisperDownloaded } from '../../core/recognition';
 import { setSetting, useSettings, type Settings } from '../../core/settings';
 import { hasRussianVoice, speak } from '../../core/speech';
+import { addReminderToCalendar } from '../../core/reminder';
+import { connectSync, disconnectSync, syncNow, useSyncState } from '../../core/sync';
 import { Button, Card } from '../../ui/ui';
 
 export default function SettingsSection() {
@@ -24,7 +26,7 @@ export default function SettingsSection() {
       a.click();
       URL.revokeObjectURL(a.href);
     }
-    await db.settings.put({ key: 'lastBackup', value: Date.now() });
+    await db.settings.put({ key: 'lastBackup', value: Date.now(), updatedAt: Date.now() });
     setMsg('Sicherung erstellt.');
   };
 
@@ -88,6 +90,8 @@ export default function SettingsSection() {
         )}
       </Card>
 
+      <ReminderSettings settings={settings} />
+      <SyncSettings />
       <SpeechSettings settings={settings} />
 
       <Card className="space-y-3">
@@ -121,6 +125,104 @@ export default function SettingsSection() {
       </Card>
       <p className="text-center text-xs text-muted">LernRussian v{__APP_VERSION__}</p>
     </section>
+  );
+}
+
+export function ReminderSettings({ settings }: { settings: Settings }) {
+  return (
+    <Card className="space-y-3">
+      <h3 className="font-semibold">Tägliche Erinnerung</h3>
+      <p className="text-sm text-muted">
+        Die App legt einen täglichen Termin mit Hinweis in deinem Kalender an – ohne Server, ohne Benachrichtigungs-Rechte. Im Termin steht ein Link zurück in
+        die App.
+      </p>
+      <div className="flex flex-wrap items-center gap-2">
+        <label className="flex items-center gap-2">
+          <span className="text-sm text-muted">Uhrzeit</span>
+          <input
+            type="time"
+            value={settings.reminderTime}
+            onChange={(e) => e.target.value && setSetting('reminderTime', e.target.value)}
+            className="rounded-lg border border-line bg-surface px-3 py-2"
+          />
+        </label>
+        <Button variant="secondary" onClick={() => addReminderToCalendar(settings.reminderTime, settings.dailyGoalMinutes)}>
+          📅 Zum Kalender hinzufügen
+        </Button>
+      </div>
+      <p className="text-xs text-muted">Auf dem iPhone: Datei teilen → „Kalender“ bzw. „Zum Kalender hinzufügen“. Zum Ändern den alten Termin im Kalender löschen.</p>
+    </Card>
+  );
+}
+
+function SyncSettings() {
+  const sync = useSyncState();
+  const [token, setToken] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState('');
+  const connect = async () => {
+    setBusy(true);
+    setErr('');
+    try {
+      await connectSync(token);
+      setToken('');
+    } catch (e) {
+      setErr((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  };
+  return (
+    <Card className="space-y-3">
+      <h3 className="font-semibold">Geräte synchronisieren</h3>
+      {sync.status === 'off' ? (
+        <>
+          <p className="text-sm text-muted">
+            Gleicht deinen Lernstand automatisch zwischen iPhone und Computer ab – über ein <b>privates GitHub Gist</b> (kostenlos). Einmal pro Gerät
+            einrichten:
+          </p>
+          <ol className="list-decimal space-y-1 pl-5 text-sm">
+            <li>
+              Auf GitHub einen Token erstellen:{' '}
+              <a className="text-accent underline" href="https://github.com/settings/tokens/new?scopes=gist&description=LernRussian%20Sync" target="_blank" rel="noreferrer">
+                github.com/settings/tokens
+              </a>{' '}
+              – nur das Recht <code>gist</code> ankreuzen, Ablauf „No expiration“.
+            </li>
+            <li>Token hier einfügen und verbinden. Auf dem zweiten Gerät denselben Token verwenden.</li>
+          </ol>
+          <input
+            type="password"
+            value={token}
+            onChange={(e) => setToken(e.target.value)}
+            placeholder="ghp_…"
+            autoComplete="off"
+            className="w-full rounded-lg border border-line bg-surface px-3 py-2 font-mono text-sm"
+          />
+          <Button onClick={connect} disabled={!token.trim() || busy}>
+            {busy ? 'Verbinde …' : 'Verbinden'}
+          </Button>
+          {err && <p className="text-sm text-bad">{err}</p>}
+          <p className="text-xs text-muted">Der Token bleibt nur auf diesem Gerät gespeichert und wird nie in Sicherungen übernommen.</p>
+        </>
+      ) : (
+        <>
+          <p className="text-sm" role="status">
+            {sync.status === 'syncing' ? '🔄 Synchronisiere …' : sync.status === 'error' ? `⚠️ ${sync.error}` : '✅ Verbunden'}
+            {sync.last && <span className="text-muted"> · zuletzt {new Date(sync.last).toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' })}</span>}
+          </p>
+          <p className="text-xs text-muted">Automatisch beim Start, alle 5 Minuten, beim Wechsel in den Hintergrund und sobald wieder Internet da ist.</p>
+          <div className="flex gap-2">
+            <Button variant="secondary" onClick={() => syncNow()} disabled={sync.status === 'syncing'}>
+              Jetzt synchronisieren
+            </Button>
+            <Button variant="ghost" onClick={disconnectSync}>
+              Trennen
+            </Button>
+          </div>
+        </>
+      )}
+    </Card>
   );
 }
 

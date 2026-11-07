@@ -3,7 +3,14 @@
 Persönliche Russisch-Lern-App (A1–A2) für deutschsprachige Erwachsene ohne Vorkenntnisse.
 Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem **iPhone (als installierte Web-App)** und im **Browser**, komplett **offline-fähig**.
 
-## Stand: v0.4 – Alphabet, Vokabeltrainer, Einheit 1, Aussprache & Statistik
+## Stand: v0.5 – Einheiten 1–2, Vokabeltrainer, Aussprache, Statistik, Sync & Erinnerung
+
+**Neu in v0.5:**
+- **Onboarding** beim ersten Start: Name, Lernziel (sortiert die Wortschatz-Themen), Tagesziel, Erinnerung
+- **Tägliche Erinnerung** als wiederkehrender Kalendertermin (.ics) mit Hinweis und Link zur App – kein Server nötig
+- **Automatischer Abgleich** zwischen Geräten über ein privates GitHub Gist (Token mit Recht `gist`): beim Start, alle 5 Minuten, beim Wechsel in den Hintergrund und sobald wieder Internet da ist. Zusammenführung: neuester Datensatz gewinnt, Wiederholungen werden vereinigt, Lernzeit pro Tag als Maximum
+- Hinweis auf „Heute“, wenn der Lernstand länger nicht gesichert wurde
+
 
 **Neu: Einheit 2 „Семья́“ (Familie & Menschen)** – 5 Lektionen + Checkpoint: Genus, мой/моя́/моё, у меня́ есть / нет, Berufe und в + Ort, Alter (год/го́да/лет), Plural. 47 neue Kurswörter, 105 neue Aufnahmen.
 

@@ -19,8 +19,17 @@ export default function VocabPage() {
   const newToday = cards ? introducedToday(cards) : 0;
   const total = countStatus(words, status);
 
+  // Topics matching the learning goal (from onboarding) come first.
+  const PRIORITY: Record<string, string[]> = {
+    reise: ['reisen', 'stadt', 'essen', 'zahlen'],
+    familie: ['familie', 'einheit2', 'begruessung', 'farben'],
+    beruf: ['verben', 'zahlen', 'zeit', 'begruessung'],
+    allgemein: [],
+  };
+  const prio = PRIORITY[settings.goal] ?? [];
+  const rank = (id: string) => (prio.includes(id) ? prio.indexOf(id) : prio.length + TOPICS.findIndex((t) => t.id === id));
   const groups = [
-    ...TOPICS.map((t) => ({ id: t.id, emoji: t.emoji, title: t.title, words: t.words })),
+    ...[...TOPICS].sort((a, b) => rank(a.id) - rank(b.id)).map((t) => ({ id: t.id, emoji: t.emoji, title: t.title, words: t.words })),
     ...sets.map((s) => ({ id: s.id, emoji: s.emoji, title: s.name, words: words.filter((w) => w.topic === s.id) })),
   ];
 

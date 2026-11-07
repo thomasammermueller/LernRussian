@@ -8,6 +8,7 @@ import { Card, ProgressBar, Ring, SpeakButton } from '../../ui/ui';
 import { COURSE_SEQUENCE } from '../course/curriculum';
 import { dueCards, introducedToday } from '../vocab/queue';
 import { useAllWords, useCards } from '../vocab/useVocab';
+import { syncEnabled } from '../../core/sync';
 
 const greeting = (h: number) => (h < 11 ? 'До́брое у́тро' : h < 18 ? 'До́брый день' : 'До́брый ве́чер');
 
@@ -35,6 +36,9 @@ export default function TodayPage() {
   const wordsById = useMemo(() => new Map(words.map((w) => [w.id, w])), [words]);
   const due = dueCards(cards, wordsById).length;
   const newToday = introducedToday(cards);
+  const lastBackup = useLiveQuery(() => db.settings.get('lastBackup'), [])?.value as number | undefined;
+  const learnedDays = activity.filter((a) => a.seconds >= 60).length;
+  const backupDue = !syncEnabled() && learnedDays >= 3 && (!lastBackup || Date.now() - lastBackup > 7 * 86400_000);
 
   return (
     <div className="space-y-4 pt-2">
@@ -94,6 +98,15 @@ export default function TodayPage() {
           </Card>
         </Link>
       </div>
+
+      {backupDue && (
+        <Link to="/fortschritt" className="block">
+          <Card className="border-gold bg-warn-soft text-sm">
+            💾 <b>Sichere deinen Lernstand:</b> Er liegt nur auf diesem Gerät. Richte unter Fortschritt die Synchronisation ein oder exportiere eine
+            Sicherung.
+          </Card>
+        </Link>
+      )}
 
       <Card className="flex items-center gap-3">
         <div className="flex-1">

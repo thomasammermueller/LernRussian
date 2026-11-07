@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router';
 import { useSettings } from '../core/settings';
 import { setSpeechRate } from '../core/speech';
 import { useActivityTracker } from './useActivityTracker';
+import { startAutoSync } from '../core/sync';
+import Onboarding, { useNeedsOnboarding } from '../features/onboarding/Onboarding';
 import TabBar from './TabBar';
 import TodayPage from '../features/today/TodayPage';
 import CoursePage from '../features/course/CoursePage';
@@ -32,6 +34,9 @@ export default function App() {
   }, [settings.theme]);
 
   useEffect(() => setSpeechRate(settings.speechRate), [settings.speechRate]);
+  useEffect(() => startAutoSync(), []);
+  const needsOnboarding = useNeedsOnboarding();
+  if (needsOnboarding) return <Onboarding />;
 
   return (
     <div className="min-h-dvh md:flex">

@@ -11,6 +11,9 @@ export interface Settings {
   newPerDay: number;
   listenMode: boolean;
   speechEngine: 'auto' | 'webspeech' | 'whisper';
+  goal: 'allgemein' | 'reise' | 'familie' | 'beruf';
+  reminderTime: string;
+  onboarded: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -22,15 +25,18 @@ export const DEFAULT_SETTINGS: Settings = {
   newPerDay: 10,
   listenMode: false,
   speechEngine: 'auto',
+  goal: 'allgemein',
+  reminderTime: '19:30',
+  onboarded: false,
 };
 
-export function useSettings(): Settings {
+export function useSettings(): Settings & { loaded: boolean } {
   const rows = useLiveQuery(() => db.settings.toArray(), []);
-  const s: Settings = { ...DEFAULT_SETTINGS };
+  const s: Settings & { loaded: boolean } = { ...DEFAULT_SETTINGS, loaded: rows !== undefined };
   for (const r of rows ?? []) {
     if (r.key in s) (s as unknown as Record<string, unknown>)[r.key] = r.value;
   }
   return s;
 }
 
-export const setSetting = <K extends keyof Settings>(key: K, value: Settings[K]) => db.settings.put({ key, value });
+export const setSetting = <K extends keyof Settings>(key: K, value: Settings[K]) => db.settings.put({ key, value, updatedAt: Date.now() });

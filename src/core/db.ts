@@ -81,6 +81,7 @@ export interface PronunciationRecord {
 export interface Setting {
   key: string;
   value: unknown;
+  updatedAt?: number;
 }
 
 export class LernDB extends Dexie {
@@ -234,12 +235,19 @@ export async function importBackup(data: Backup) {
     };
     await merge<LetterProgress>(db.letters, data.letters, (r) => r.id);
     await merge<LessonProgress>(db.lessons, data.lessons, (r) => r.id);
-    await merge<DayActivity>(db.activity, data.activity, (r) => r.date);
+    // Learning time: keep the larger value per day (both devices may have counted the same day).
+    for (const row of data.activity ?? []) {
+      const cur = await db.activity.get(row.date);
+      if (!cur || cur.seconds < row.seconds) await db.activity.put({ ...row, updatedAt: Math.max(row.updatedAt, cur?.updatedAt ?? 0) });
+    }
     await merge<CardRecord>(db.cards, data.cards, (r) => r.id);
     await merge<UserSet>(db.userSets, data.userSets, (r) => r.id);
     await merge<UserWord>(db.userWords, data.userWords, (r) => r.id);
     if (data.reviews?.length) await db.reviews.bulkPut(data.reviews);
     if (data.pronunciations?.length) await db.pronunciations.bulkPut(data.pronunciations);
-    for (const s of data.settings ?? []) await db.settings.put(s);
+    for (const s of data.settings ?? []) {
+      const cur = await db.settings.get(s.key);
+      if (!cur || (cur.updatedAt ?? 0) < (s.updatedAt ?? 0)) await db.settings.put(s);
+    }
   });
 }
