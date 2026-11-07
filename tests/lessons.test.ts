@@ -12,7 +12,7 @@ import { lessonSteps } from '../src/features/lesson/LessonPage';
 describe('lessons', () => {
   it('have unique ids and a checkpoint per unit', () => {
     expect(new Set(ALL_LESSONS.map((l) => l.id)).size).toBe(ALL_LESSONS.length);
-    expect(ALL_LESSONS.filter((l) => l.checkpoint).map((l) => l.id)).toEqual(['1.C', '2.C', '3.C', '4.C']);
+    expect(ALL_LESSONS.filter((l) => l.checkpoint).map((l) => l.id)).toEqual(['1.C', '2.C', '3.C', '4.C', '5.C']);
   });
   it('only reference vocabulary that exists in the word lists', () => {
     for (const l of ALL_LESSONS) for (const ru of l.vocab) expect(wordByRu(ru), `${l.id}: ${ru}`).toBeDefined();

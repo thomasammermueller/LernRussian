@@ -12,7 +12,9 @@ Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem
 - Hinweis auf „Heute“, wenn der Lernstand länger nicht gesichert wurde
 
 
-**Neu: Einheit 4 „Еда́“ (Essen & Café)** – Bestellen im Café und Restaurant, хоте́ть, люби́ть, есть/пить, Akkusativ, с + Instrumental und без + Genitiv als feste Wendungen, Tischsitten. 39 neue Kurswörter.
+**Neu: Einheit 5 „Го́род“ (In der Stadt)** – Orte mit в/на + Präpositiv, nach dem Weg fragen, где/куда́ (Präpositiv/Akkusativ), идти́ und е́хать, Verkehrsmittel, Stadtausflug. 30 neue Kurswörter.
+
+**Einheit 4 „Еда́“ (Essen & Café)** – Bestellen im Café und Restaurant, хоте́ть, люби́ть, есть/пить, Akkusativ, с + Instrumental und без + Genitiv als feste Wendungen, Tischsitten. 39 neue Kurswörter.
 
 **Einheit 3 „Чи́сла и вре́мя“ (Zahlen & Zeit)** – Zahlen 0–100, Preise (рубль/рубля́/рубле́й), Uhrzeit (час/часа́/часо́в), Termine (в сре́ду, в два часа́ дня), Verabredungen und Tageszeiten. 49 neue Kurswörter.
 
