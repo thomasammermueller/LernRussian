@@ -292,5 +292,49 @@ export const TOPICS: Topic[] = [
   ]),
 ];
 
-export const BUILTIN_WORDS: Word[] = TOPICS.flatMap((t) => t.words);
-export const topicById = (id: string) => TOPICS.find((t) => t.id === id);
+/** Course words that are not part of the topic sets above (introduced in the lessons). */
+export const COURSE_TOPICS: Topic[] = [
+  topic('einheit1', '📘', 'Kurs: Einheit 1', [
+    ['отли́чно', 'atlítschna', 'super, ausgezeichnet'],
+    ['меня́', 'minjá', 'mich'],
+    ['тебя́', 'tibjá', 'dich'],
+    ['вас', 'was', 'Sie, euch (Akkusativ)'],
+    ['его́', 'jiwó', 'ihn; sein', { note: 'г wird hier wie w gesprochen' }],
+    ['её', 'jijó', 'sie (Akkusativ); ihr'],
+    ['Как тебя́ зову́т?', 'kak tibjá zawút', 'Wie heißt du?'],
+    ['Мне то́же.', 'mnje tózhe', 'Mir auch. / Ebenso.'],
+    ['Взаи́мно!', 'wzaímna', 'Gleichfalls!'],
+    ['э́то', 'éta', 'das (ist)', { ex: ['Э́то Ле́на.', 'Das ist Lena.'] }],
+    ['оно́', 'anó', 'es'],
+    ['мой', 'moj', 'mein', { ex: ['Он мой друг.', 'Er ist mein Freund.'] }],
+    ['студе́нт', 'studjént', 'Student'],
+    ['студе́нтка', 'studjéntka', 'Studentin'],
+    ['врач', 'wratsch', 'Arzt, Ärztin'],
+    ['краси́во', 'krasíwa', 'schön (Adverb)'],
+    ['из', 'is', 'aus', { ex: ['Я из Герма́нии.', 'Ich komme aus Deutschland.'] }],
+    ['в', 'w', 'in', { ex: ['Я живу́ в Берли́не.', 'Ich wohne in Berlin.'] }],
+    ['Герма́ния', 'girmánija', 'Deutschland'],
+    ['Росси́я', 'rassíja', 'Russland'],
+    ['А́встрия', 'áfstrija', 'Österreich'],
+    ['Швейца́рия', 'schwejtsárija', 'Schweiz'],
+    ['Москва́', 'maskwá', 'Moskau'],
+    ['Пра́вда?', 'práwda', 'Wirklich?'],
+    ['сосе́д', 'sasjét', 'Nachbar'],
+    ['сосе́дка', 'sasjétka', 'Nachbarin'],
+    ['по-ру́сски', 'pa-rúski', '(auf) Russisch', { ex: ['Вы говори́те по-ру́сски?', 'Sprechen Sie Russisch?'] }],
+    ['по-неме́цки', 'pa-nimjétski', '(auf) Deutsch'],
+    ['по-англи́йски', 'pa-anglíjski', '(auf) Englisch'],
+    ['немно́го', 'nimnóga', 'ein bisschen'],
+    ['ме́дленнее', 'mjédlinjeje', 'langsamer', { ex: ['Говори́те, пожа́луйста, ме́дленнее.', 'Sprechen Sie bitte langsamer.'] }],
+    ['Спаси́бо большо́е!', "spasíba bal'schóje", 'Vielen Dank!'],
+  ]),
+];
+
+export const ALL_TOPICS: Topic[] = [...TOPICS, ...COURSE_TOPICS];
+
+export const BUILTIN_WORDS: Word[] = ALL_TOPICS.flatMap((t) => t.words);
+export const topicById = (id: string) => ALL_TOPICS.find((t) => t.id === id);
+
+const byRu = new Map(BUILTIN_WORDS.map((w) => [w.ru.normalize('NFC'), w]));
+/** Finds a built-in word by its exact Russian spelling (as used in lesson vocab lists). */
+export const wordByRu = (ru: string) => byRu.get(ru.normalize('NFC'));

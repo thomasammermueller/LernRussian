@@ -5,7 +5,7 @@ import { ALPHABET } from '../../content/alphabet';
 import { computeStreak, db, isLetterLearned, today } from '../../core/db';
 import { useSettings } from '../../core/settings';
 import { Card, ProgressBar, Ring, SpeakButton } from '../../ui/ui';
-import { STAGE0 } from '../course/curriculum';
+import { COURSE_SEQUENCE } from '../course/curriculum';
 import { dueCards, introducedToday } from '../vocab/queue';
 import { useAllWords, useCards } from '../vocab/useVocab';
 
@@ -27,7 +27,7 @@ export default function TodayPage() {
   const minutes = Math.floor((activity.find((a) => a.date === today())?.seconds ?? 0) / 60);
   const streak = computeStreak(activity);
   const done = new Set(lessons.filter((l) => l.done).map((l) => l.id));
-  const nextLesson = STAGE0.find((i) => !done.has(i.id));
+  const nextLesson = COURSE_SEQUENCE.find((i) => !done.has(i.id));
   const learned = letters.filter(isLetterLearned).length;
   const wod = wordOfTheDay();
   const words = useAllWords();
@@ -72,8 +72,8 @@ export default function TodayPage() {
         </Link>
       ) : (
         <Card className="border-ok bg-ok-soft">
-          <div className="font-semibold text-ok">🎉 Alphabet abgeschlossen!</div>
-          <div className="text-sm">Lerne jetzt jeden Tag ein paar Wörter – Einheit 1 „Знакомство“ kommt mit einem der nächsten Updates.</div>
+          <div className="font-semibold text-ok">🎉 Alle verfügbaren Lektionen geschafft!</div>
+          <div className="text-sm">Wiederhole täglich deine Wörter – weitere Einheiten kommen mit den nächsten Updates.</div>
         </Card>
       )}
 

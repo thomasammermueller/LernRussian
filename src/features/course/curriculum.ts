@@ -1,4 +1,5 @@
 import { GROUPS, type LetterGroup } from '../../content/alphabet';
+import { ALL_LESSONS } from '../../content/lessons';
 
 export interface CourseItem {
   id: string;
@@ -34,4 +35,10 @@ export const UNITS: { n: number; ru: string; de: string; level: 'A1' | 'A2' }[] 
   { n: 14, ru: 'Пра́здники', de: 'Feste & Traditionen', level: 'A2' },
   { n: 15, ru: 'Се́рвис', de: 'Dienstleistungen', level: 'A2' },
   { n: 16, ru: 'Расска́з', de: 'Erzählen', level: 'A2' },
+];
+
+/** Everything in the course in recommended order (used for "Weiterlernen"). */
+export const COURSE_SEQUENCE: CourseItem[] = [
+  ...STAGE0,
+  ...ALL_LESSONS.map((l) => ({ id: l.id, title: `${l.title.ru} – ${l.title.de}`, subtitle: l.canDo, to: `/kurs/lektion/${l.id}` })),
 ];

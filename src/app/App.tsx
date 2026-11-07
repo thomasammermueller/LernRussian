@@ -17,6 +17,8 @@ import AlphabetTablePage from '../features/alphabet/AlphabetTablePage';
 import LetterDetailPage from '../features/alphabet/LetterDetailPage';
 import KeyboardTrainerPage from '../features/keyboard/KeyboardTrainerPage';
 import ProgressPage from '../features/progress/ProgressPage';
+import LessonPage from '../features/lesson/LessonPage';
+import GrammarPage from '../features/reference/GrammarPage';
 
 export default function App() {
   const settings = useSettings();
@@ -39,6 +41,8 @@ export default function App() {
           <Route path="/kurs" element={<CoursePage />} />
           <Route path="/kurs/alphabet/:group" element={<AlphabetLessonPage />} />
           <Route path="/kurs/lesetest" element={<ReadingTestPage />} />
+          <Route path="/kurs/lektion/:id" element={<LessonPage />} />
+          <Route path="/nachschlagen/grammatik" element={<GrammarPage />} />
           <Route path="/woerter" element={<VocabPage />} />
           <Route path="/woerter/thema/:id" element={<TopicPage />} />
           <Route path="/woerter/lernen" element={<StudyPage />} />

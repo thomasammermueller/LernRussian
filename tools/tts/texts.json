@@ -1,0 +1,2534 @@
+[
+ {
+  "key": "dmitri-129d65a6",
+  "voice": "dmitri",
+  "text": "Взаи́мно!",
+  "tts": "Взаи́мно!"
+ },
+ {
+  "key": "dmitri-26283eae",
+  "voice": "dmitri",
+  "text": "Норма́льно. А у тебя́?",
+  "tts": "Норма́льно. А у тебя́?"
+ },
+ {
+  "key": "dmitri-28a98fa2",
+  "voice": "dmitri",
+  "text": "Э́то Том. Он мой друг.",
+  "tts": "Э́то Том. Он мой друг."
+ },
+ {
+  "key": "dmitri-2b00b593",
+  "voice": "dmitri",
+  "text": "Нет, не говорю́. А вы говори́те по-ру́сски?",
+  "tts": "Нет, не говорю́. А вы говори́те по-ру́сски?"
+ },
+ {
+  "key": "dmitri-33f532dc",
+  "voice": "dmitri",
+  "text": "Пожа́луйста! Вы хорошо́ говори́те по-ру́сски!",
+  "tts": "Пожа́луйста! Вы хорошо́ говори́те по-ру́сски!"
+ },
+ {
+  "key": "dmitri-3ea7ae1c",
+  "voice": "dmitri",
+  "text": "Нет, он не студе́нт. Он врач.",
+  "tts": "Нет, он не студе́нт. Он врач."
+ },
+ {
+  "key": "dmitri-42de6edc",
+  "voice": "dmitri",
+  "text": "Я то́же! Мы сосе́ди!",
+  "tts": "Я то́же! Мы сосе́ди!"
+ },
+ {
+  "key": "dmitri-4617870d",
+  "voice": "dmitri",
+  "text": "Э́то Ле́на. Она́ студе́нтка.",
+  "tts": "Э́то Ле́на. Она́ студе́нтка."
+ },
+ {
+  "key": "dmitri-4ca9be7f",
+  "voice": "dmitri",
+  "text": "Пря́мо… и… нале́во.",
+  "tts": "Пря́мо… и… нале́во."
+ },
+ {
+  "key": "dmitri-4cd56540",
+  "voice": "dmitri",
+  "text": "Приве́т! Меня́ зову́т Макс. А как тебя́ зову́т?",
+  "tts": "Приве́т! Меня́ зову́т Макс. А как тебя́ зову́т?"
+ },
+ {
+  "key": "dmitri-58d7cc54",
+  "voice": "dmitri",
+  "text": "А где вы живёте?",
+  "tts": "А где вы живёте?"
+ },
+ {
+  "key": "dmitri-5c42cf81",
+  "voice": "dmitri",
+  "text": "А́нна, отку́да вы?",
+  "tts": "А́нна, отку́да вы?"
+ },
+ {
+  "key": "dmitri-629ad3c8",
+  "voice": "dmitri",
+  "text": "Здра́вствуйте! Как вас зову́т?",
+  "tts": "Здра́ствуйте! Как вас зову́т?"
+ },
+ {
+  "key": "dmitri-66c37743",
+  "voice": "dmitri",
+  "text": "Я из Росси́и, из Москвы́. Но сейча́с я живу́ в Берли́не.",
+  "tts": "Я из Росси́и, из Москвы́. Но сейча́с я живу́ в Берли́не."
+ },
+ {
+  "key": "dmitri-a57d8ab1",
+  "voice": "dmitri",
+  "text": "О́чень прия́тно, Ле́на!",
+  "tts": "О́чень прия́тно, Ле́на!"
+ },
+ {
+  "key": "dmitri-b947c266",
+  "voice": "dmitri",
+  "text": "Метро́? Пря́мо и нале́во.",
+  "tts": "Метро́? Пря́мо и нале́во."
+ },
+ {
+  "key": "dmitri-c7ae9695",
+  "voice": "dmitri",
+  "text": "Приве́т, О́ля!",
+  "tts": "Приве́т, О́ля!"
+ },
+ {
+  "key": "dmitri-e2a3d0ae",
+  "voice": "dmitri",
+  "text": "Ива́н Петро́вич Орло́в.",
+  "tts": "Ива́н Петро́вич Орло́в."
+ },
+ {
+  "key": "dmitri-e48cd8b4",
+  "voice": "dmitri",
+  "text": "Э́то Москва́. Э́то Кремль.",
+  "tts": "Э́то Москва́. Э́то Кремль."
+ },
+ {
+  "key": "dmitri-f6ec0397",
+  "voice": "dmitri",
+  "text": "Ну, пока́!",
+  "tts": "Ну, пока́!"
+ },
+ {
+  "key": "irina-001f9ad7",
+  "voice": "irina",
+  "text": "Сего́дня понеде́льник.",
+  "tts": "Сего́дня понеде́льник."
+ },
+ {
+  "key": "irina-00a83155",
+  "voice": "irina",
+  "text": "жэ",
+  "tts": "жэ"
+ },
+ {
+  "key": "irina-00bce2d9",
+  "voice": "irina",
+  "text": "ы",
+  "tts": "ы"
+ },
+ {
+  "key": "irina-00c796ec",
+  "voice": "irina",
+  "text": "борщ",
+  "tts": "борщ"
+ },
+ {
+  "key": "irina-028e9c95",
+  "voice": "irina",
+  "text": "мы",
+  "tts": "мы"
+ },
+ {
+  "key": "irina-02bce5ff",
+  "voice": "irina",
+  "text": "э",
+  "tts": "э"
+ },
+ {
+  "key": "irina-03199b31",
+  "voice": "irina",
+  "text": "тури́ст",
+  "tts": "тури́ст"
+ },
+ {
+  "key": "irina-0397ed61",
+  "voice": "irina",
+  "text": "ры́ба",
+  "tts": "ры́ба"
+ },
+ {
+  "key": "irina-03bce792",
+  "voice": "irina",
+  "text": "ю",
+  "tts": "ю"
+ },
+ {
+  "key": "irina-03e0e948",
+  "voice": "irina",
+  "text": "цирк",
+  "tts": "цирк"
+ },
+ {
+  "key": "irina-04bce925",
+  "voice": "irina",
+  "text": "я",
+  "tts": "я"
+ },
+ {
+  "key": "irina-04d0b51a",
+  "voice": "irina",
+  "text": "спать",
+  "tts": "спать"
+ },
+ {
+  "key": "irina-04d8b925",
+  "voice": "irina",
+  "text": "Э́то Ле́на?",
+  "tts": "Э́то Ле́на?"
+ },
+ {
+  "key": "irina-06b589b3",
+  "voice": "irina",
+  "text": "три́дцать",
+  "tts": "три́дцать"
+ },
+ {
+  "key": "irina-072aa0cb",
+  "voice": "irina",
+  "text": "споко́йной но́чи",
+  "tts": "споко́йной но́чи"
+ },
+ {
+  "key": "irina-073a7fe1",
+  "voice": "irina",
+  "text": "вчера́",
+  "tts": "вчера́"
+ },
+ {
+  "key": "irina-074b0785",
+  "voice": "irina",
+  "text": "Я живу́ в Москве́. (Moskau)",
+  "tts": "Я живу́ в Москве́. (Moskau)"
+ },
+ {
+  "key": "irina-087112dc",
+  "voice": "irina",
+  "text": "Отли́чно! Спаси́бо.",
+  "tts": "Отли́чно! Спаси́бо."
+ },
+ {
+  "key": "irina-08bcef71",
+  "voice": "irina",
+  "text": "у",
+  "tts": "у"
+ },
+ {
+  "key": "irina-09567804",
+  "voice": "irina",
+  "text": "о́чень",
+  "tts": "о́чень"
+ },
+ {
+  "key": "irina-0a575961",
+  "voice": "irina",
+  "text": "эф",
+  "tts": "эф"
+ },
+ {
+  "key": "irina-0b96c592",
+  "voice": "irina",
+  "text": "ка",
+  "tts": "ка"
+ },
+ {
+  "key": "irina-0bae3495",
+  "voice": "irina",
+  "text": "понима́ть",
+  "tts": "понима́ть"
+ },
+ {
+  "key": "irina-0d518fa2",
+  "voice": "irina",
+  "text": "подру́га",
+  "tts": "подру́га"
+ },
+ {
+  "key": "irina-0d575e1a",
+  "voice": "irina",
+  "text": "эс",
+  "tts": "эс"
+ },
+ {
+  "key": "irina-0d9d0eda",
+  "voice": "irina",
+  "text": "футбо́л",
+  "tts": "футбо́л"
+ },
+ {
+  "key": "irina-0de46c13",
+  "voice": "irina",
+  "text": "дорого́й",
+  "tts": "дорого́й"
+ },
+ {
+  "key": "irina-0debfd9e",
+  "voice": "irina",
+  "text": "пя́тница",
+  "tts": "пя́тница"
+ },
+ {
+  "key": "irina-0e362f3a",
+  "voice": "irina",
+  "text": "Меня́ зову́т А́нна Шмидт. А вас?",
+  "tts": "Меня́ зову́т А́нна Шмидт. А вас?"
+ },
+ {
+  "key": "irina-0e3910af",
+  "voice": "irina",
+  "text": "зелёный",
+  "tts": "зелёный"
+ },
+ {
+  "key": "irina-0e575fad",
+  "voice": "irina",
+  "text": "эр",
+  "tts": "эр"
+ },
+ {
+  "key": "irina-0e9c8e21",
+  "voice": "irina",
+  "text": "Кто э́то?",
+  "tts": "Кто э́то?"
+ },
+ {
+  "key": "irina-11576466",
+  "voice": "irina",
+  "text": "эн",
+  "tts": "эн"
+ },
+ {
+  "key": "irina-11e42546",
+  "voice": "irina",
+  "text": "рабо́тать",
+  "tts": "рабо́тать"
+ },
+ {
+  "key": "irina-123d4253",
+  "voice": "irina",
+  "text": "Извини́те, где метро́?",
+  "tts": "Извини́те, где метро́?"
+ },
+ {
+  "key": "irina-125765f9",
+  "voice": "irina",
+  "text": "эм",
+  "tts": "эм"
+ },
+ {
+  "key": "irina-13d8d0c2",
+  "voice": "irina",
+  "text": "Э́то Ле́на.",
+  "tts": "Э́то Ле́на."
+ },
+ {
+  "key": "irina-145e0c47",
+  "voice": "irina",
+  "text": "объе́кт",
+  "tts": "объе́кт"
+ },
+ {
+  "key": "irina-14b39869",
+  "voice": "irina",
+  "text": "мину́та",
+  "tts": "мину́та"
+ },
+ {
+  "key": "irina-1500d198",
+  "voice": "irina",
+  "text": "оно́",
+  "tts": "оно́"
+ },
+ {
+  "key": "irina-166f00aa",
+  "voice": "irina",
+  "text": "пи́во",
+  "tts": "пи́во"
+ },
+ {
+  "key": "irina-16bd057b",
+  "voice": "irina",
+  "text": "ё",
+  "tts": "ё"
+ },
+ {
+  "key": "irina-172fbf28",
+  "voice": "irina",
+  "text": "вку́сно",
+  "tts": "вку́сно"
+ },
+ {
+  "key": "irina-174eaba0",
+  "voice": "irina",
+  "text": "ме́сяц",
+  "tts": "ме́сяц"
+ },
+ {
+  "key": "irina-1793f6d0",
+  "voice": "irina",
+  "text": "и́ли",
+  "tts": "и́ли"
+ },
+ {
+  "key": "irina-1a6ee4f7",
+  "voice": "irina",
+  "text": "де́душка",
+  "tts": "де́душка"
+ },
+ {
+  "key": "irina-1a95fec0",
+  "voice": "irina",
+  "text": "Я из Росси́и. (Russland)",
+  "tts": "Я из Росси́и. (Russland)"
+ },
+ {
+  "key": "irina-1cea126f",
+  "voice": "irina",
+  "text": "Они́ не понима́ют.",
+  "tts": "Они́ не понима́ют."
+ },
+ {
+  "key": "irina-1de54804",
+  "voice": "irina",
+  "text": "сейча́с",
+  "tts": "сейча́с"
+ },
+ {
+  "key": "irina-1fdea1ee",
+  "voice": "irina",
+  "text": "Спаси́бо!",
+  "tts": "Спаси́бо!"
+ },
+ {
+  "key": "irina-2096eab7",
+  "voice": "irina",
+  "text": "горя́чий",
+  "tts": "горя́чий"
+ },
+ {
+  "key": "irina-20c538ef",
+  "voice": "irina",
+  "text": "Э́то мой друг.",
+  "tts": "Э́то мой друг."
+ },
+ {
+  "key": "irina-215fcb21",
+  "voice": "irina",
+  "text": "напра́во",
+  "tts": "напра́во"
+ },
+ {
+  "key": "irina-219425b2",
+  "voice": "irina",
+  "text": "Москва́",
+  "tts": "Москва́"
+ },
+ {
+  "key": "irina-22205999",
+  "voice": "irina",
+  "text": "у́жин",
+  "tts": "у́жин"
+ },
+ {
+  "key": "irina-222fc412",
+  "voice": "irina",
+  "text": "маши́на",
+  "tts": "маши́на"
+ },
+ {
+  "key": "irina-23441fb8",
+  "voice": "irina",
+  "text": "Спаси́бо большо́е!",
+  "tts": "Спаси́бо большо́е!"
+ },
+ {
+  "key": "irina-23efd60a",
+  "voice": "irina",
+  "text": "До́брый ве́чер, А́нна! Как у вас дела́?",
+  "tts": "До́брый ве́чер, А́нна! Как у вас дела́?"
+ },
+ {
+  "key": "irina-24ca44dc",
+  "voice": "irina",
+  "text": "и кра́ткое",
+  "tts": "и кра́ткое"
+ },
+ {
+  "key": "irina-267eb627",
+  "voice": "irina",
+  "text": "Извини́те, вы говори́те по-неме́цки?",
+  "tts": "Извини́те, вы говори́те по-неме́цки?"
+ },
+ {
+  "key": "irina-2720c36c",
+  "voice": "irina",
+  "text": "де́ти",
+  "tts": "де́ти"
+ },
+ {
+  "key": "irina-281c2016",
+  "voice": "irina",
+  "text": "здра́вствуйте",
+  "tts": "здра́ствуйте"
+ },
+ {
+  "key": "irina-28a7323b",
+  "voice": "irina",
+  "text": "писа́ть",
+  "tts": "писа́ть"
+ },
+ {
+  "key": "irina-2a11abaf",
+  "voice": "irina",
+  "text": "же́нщина",
+  "tts": "же́нщина"
+ },
+ {
+  "key": "irina-2b617d59",
+  "voice": "irina",
+  "text": "мёд",
+  "tts": "мёд"
+ },
+ {
+  "key": "irina-2b8ac258",
+  "voice": "irina",
+  "text": "Ско́лько сто́ит?",
+  "tts": "Ско́лько сто́ит?"
+ },
+ {
+  "key": "irina-2b9f8614",
+  "voice": "irina",
+  "text": "отли́чно",
+  "tts": "отли́чно"
+ },
+ {
+  "key": "irina-2c6b8435",
+  "voice": "irina",
+  "text": "Пока́!",
+  "tts": "Пока́!"
+ },
+ {
+  "key": "irina-2cc30fbe",
+  "voice": "irina",
+  "text": "слу́шать",
+  "tts": "слу́шать"
+ },
+ {
+  "key": "irina-2d2b68c8",
+  "voice": "irina",
+  "text": "вто́рник",
+  "tts": "вто́рник"
+ },
+ {
+  "key": "irina-2d649e86",
+  "voice": "irina",
+  "text": "дом",
+  "tts": "дом"
+ },
+ {
+  "key": "irina-2d93fd0f",
+  "voice": "irina",
+  "text": "хоте́ть",
+  "tts": "хоте́ть"
+ },
+ {
+  "key": "irina-2d9c8a46",
+  "voice": "irina",
+  "text": "за́втра",
+  "tts": "за́втра"
+ },
+ {
+  "key": "irina-2e13eb26",
+  "voice": "irina",
+  "text": "куда́",
+  "tts": "куда́"
+ },
+ {
+  "key": "irina-2f748a5c",
+  "voice": "irina",
+  "text": "Здра́вствуйте, А́нна!",
+  "tts": "Здра́ствуйте, А́нна!"
+ },
+ {
+  "key": "irina-2fb5481e",
+  "voice": "irina",
+  "text": "Он не врач.",
+  "tts": "Он не врач."
+ },
+ {
+  "key": "irina-2fc1129c",
+  "voice": "irina",
+  "text": "кафе́",
+  "tts": "кафе́"
+ },
+ {
+  "key": "irina-314e8f46",
+  "voice": "irina",
+  "text": "до́брый день",
+  "tts": "до́брый день"
+ },
+ {
+  "key": "irina-323a720b",
+  "voice": "irina",
+  "text": "среда́",
+  "tts": "среда́"
+ },
+ {
+  "key": "irina-323ca271",
+  "voice": "irina",
+  "text": "е́хать",
+  "tts": "е́хать"
+ },
+ {
+  "key": "irina-3291225b",
+  "voice": "irina",
+  "text": "спаси́бо",
+  "tts": "спаси́бо"
+ },
+ {
+  "key": "irina-32920740",
+  "voice": "irina",
+  "text": "эль",
+  "tts": "эль"
+ },
+ {
+  "key": "irina-336bcd1a",
+  "voice": "irina",
+  "text": "ёлка",
+  "tts": "ёлка"
+ },
+ {
+  "key": "irina-33b14a16",
+  "voice": "irina",
+  "text": "хлеб",
+  "tts": "хлеб"
+ },
+ {
+  "key": "irina-33b4f472",
+  "voice": "irina",
+  "text": "туале́т",
+  "tts": "туале́т"
+ },
+ {
+  "key": "irina-34455b94",
+  "voice": "irina",
+  "text": "рестора́н",
+  "tts": "рестора́н"
+ },
+ {
+  "key": "irina-36666871",
+  "voice": "irina",
+  "text": "Я хочу́ ко́фе.",
+  "tts": "Я хочу́ ко́фе."
+ },
+ {
+  "key": "irina-36956a0d",
+  "voice": "irina",
+  "text": "мой",
+  "tts": "мой"
+ },
+ {
+  "key": "irina-3718d306",
+  "voice": "irina",
+  "text": "пло́щадь",
+  "tts": "пло́щадь"
+ },
+ {
+  "key": "irina-386639cb",
+  "voice": "irina",
+  "text": "Мы говори́м по-неме́цки.",
+  "tts": "Мы говори́м по-неме́цки."
+ },
+ {
+  "key": "irina-3892b2ee",
+  "voice": "irina",
+  "text": "ви́за",
+  "tts": "ви́за"
+ },
+ {
+  "key": "irina-38a4a882",
+  "voice": "irina",
+  "text": "Ско́лько?",
+  "tts": "Ско́лько?"
+ },
+ {
+  "key": "irina-39fba430",
+  "voice": "irina",
+  "text": "сосе́д",
+  "tts": "сосе́д"
+ },
+ {
+  "key": "irina-3ae786ae",
+  "voice": "irina",
+  "text": "биле́т",
+  "tts": "биле́т"
+ },
+ {
+  "key": "irina-3b8e7d08",
+  "voice": "irina",
+  "text": "ко́фе",
+  "tts": "ко́фе"
+ },
+ {
+  "key": "irina-3c051b9d",
+  "voice": "irina",
+  "text": "О́чень прия́тно!",
+  "tts": "О́чень прия́тно!"
+ },
+ {
+  "key": "irina-3ca2796a",
+  "voice": "irina",
+  "text": "магази́н",
+  "tts": "магази́н"
+ },
+ {
+  "key": "irina-3e86d08a",
+  "voice": "irina",
+  "text": "сосе́дка",
+  "tts": "сосе́дка"
+ },
+ {
+  "key": "irina-3f21e84f",
+  "voice": "irina",
+  "text": "смотре́ть",
+  "tts": "смотре́ть"
+ },
+ {
+  "key": "irina-3f7253ba",
+  "voice": "irina",
+  "text": "банк",
+  "tts": "банк"
+ },
+ {
+  "key": "irina-3f9b632b",
+  "voice": "irina",
+  "text": "Пра́вда?",
+  "tts": "Пра́вда?"
+ },
+ {
+  "key": "irina-409b0bac",
+  "voice": "irina",
+  "text": "Как у вас дела́?",
+  "tts": "Как у вас дела́?"
+ },
+ {
+  "key": "irina-41d981b0",
+  "voice": "irina",
+  "text": "так",
+  "tts": "так"
+ },
+ {
+  "key": "irina-425da3a0",
+  "voice": "irina",
+  "text": "Он мой друг.",
+  "tts": "Он мой друг."
+ },
+ {
+  "key": "irina-42aded1f",
+  "voice": "irina",
+  "text": "меню́",
+  "tts": "меню́"
+ },
+ {
+  "key": "irina-42d92266",
+  "voice": "irina",
+  "text": "го́род",
+  "tts": "го́род"
+ },
+ {
+  "key": "irina-431311a6",
+  "voice": "irina",
+  "text": "три",
+  "tts": "три"
+ },
+ {
+  "key": "irina-43327bcc",
+  "voice": "irina",
+  "text": "де́ньги",
+  "tts": "де́ньги"
+ },
+ {
+  "key": "irina-43360ab4",
+  "voice": "irina",
+  "text": "метро́",
+  "tts": "метро́"
+ },
+ {
+  "key": "irina-4371a66d",
+  "voice": "irina",
+  "text": "фильм",
+  "tts": "фильм"
+ },
+ {
+  "key": "irina-446f0589",
+  "voice": "irina",
+  "text": "А́встрия",
+  "tts": "А́встрия"
+ },
+ {
+  "key": "irina-448a263a",
+  "voice": "irina",
+  "text": "Отку́да вы?",
+  "tts": "Отку́да вы?"
+ },
+ {
+  "key": "irina-44a2dc44",
+  "voice": "irina",
+  "text": "ребёнок",
+  "tts": "ребёнок"
+ },
+ {
+  "key": "irina-45380a59",
+  "voice": "irina",
+  "text": "пря́мо",
+  "tts": "пря́мо"
+ },
+ {
+  "key": "irina-456d6993",
+  "voice": "irina",
+  "text": "приве́т",
+  "tts": "приве́т"
+ },
+ {
+  "key": "irina-46713825",
+  "voice": "irina",
+  "text": "у́лица",
+  "tts": "у́лица"
+ },
+ {
+  "key": "irina-474c530a",
+  "voice": "irina",
+  "text": "дешёвый",
+  "tts": "дешёвый"
+ },
+ {
+  "key": "irina-47cfed44",
+  "voice": "irina",
+  "text": "Он не студе́нт.",
+  "tts": "Он не студе́нт."
+ },
+ {
+  "key": "irina-47d98b22",
+  "voice": "irina",
+  "text": "там",
+  "tts": "там"
+ },
+ {
+  "key": "irina-48d15555",
+  "voice": "irina",
+  "text": "парк",
+  "tts": "парк"
+ },
+ {
+  "key": "irina-490df2ce",
+  "voice": "irina",
+  "text": "Мне то́же.",
+  "tts": "Мне то́же."
+ },
+ {
+  "key": "irina-49744d34",
+  "voice": "irina",
+  "text": "за́втрак",
+  "tts": "за́втрак"
+ },
+ {
+  "key": "irina-49b0046c",
+  "voice": "irina",
+  "text": "му́зыка",
+  "tts": "му́зыка"
+ },
+ {
+  "key": "irina-49d4b42e",
+  "voice": "irina",
+  "text": "где",
+  "tts": "где"
+ },
+ {
+  "key": "irina-4a3f447c",
+  "voice": "irina",
+  "text": "нале́во",
+  "tts": "нале́во"
+ },
+ {
+  "key": "irina-4ae1e7e9",
+  "voice": "irina",
+  "text": "извини́",
+  "tts": "извини́"
+ },
+ {
+  "key": "irina-4d2daf57",
+  "voice": "irina",
+  "text": "Приве́т, Макс! Как дела́?",
+  "tts": "Приве́т, Макс! Как дела́?"
+ },
+ {
+  "key": "irina-4d4953e4",
+  "voice": "irina",
+  "text": "нет",
+  "tts": "нет"
+ },
+ {
+  "key": "irina-4d94667d",
+  "voice": "irina",
+  "text": "Всего́ хоро́шего!",
+  "tts": "Всего́ хоро́шего!"
+ },
+ {
+  "key": "irina-4eb8ff59",
+  "voice": "irina",
+  "text": "люби́ть",
+  "tts": "люби́ть"
+ },
+ {
+  "key": "irina-4eccaf94",
+  "voice": "irina",
+  "text": "у́тро",
+  "tts": "у́тро"
+ },
+ {
+  "key": "irina-5002ff5c",
+  "voice": "irina",
+  "text": "по-неме́цки",
+  "tts": "по-неме́цки"
+ },
+ {
+  "key": "irina-5291c221",
+  "voice": "irina",
+  "text": "А э́то кто?",
+  "tts": "А э́то кто?"
+ },
+ {
+  "key": "irina-52a79fcc",
+  "voice": "irina",
+  "text": "ноль",
+  "tts": "ноль"
+ },
+ {
+  "key": "irina-52ead68c",
+  "voice": "irina",
+  "text": "Вы живёте в Ве́не?",
+  "tts": "Вы живёте в Ве́не?"
+ },
+ {
+  "key": "irina-535a11ad",
+  "voice": "irina",
+  "text": "до́брое у́тро",
+  "tts": "до́брое у́тро"
+ },
+ {
+  "key": "irina-574140dc",
+  "voice": "irina",
+  "text": "пятна́дцать",
+  "tts": "пятна́дцать"
+ },
+ {
+  "key": "irina-58573e71",
+  "voice": "irina",
+  "text": "Краси́во!",
+  "tts": "Краси́во!"
+ },
+ {
+  "key": "irina-59754c4c",
+  "voice": "irina",
+  "text": "извини́те",
+  "tts": "извини́те"
+ },
+ {
+  "key": "irina-5a4f57c2",
+  "voice": "irina",
+  "text": "э́то",
+  "tts": "э́то"
+ },
+ {
+  "key": "irina-5a9adc4b",
+  "voice": "irina",
+  "text": "врач",
+  "tts": "врач"
+ },
+ {
+  "key": "irina-5ba67cad",
+  "voice": "irina",
+  "text": "Да, немно́го. Где здесь метро́?",
+  "tts": "Да, немно́го. Где здесь метро́?"
+ },
+ {
+  "key": "irina-5bf2da9e",
+  "voice": "irina",
+  "text": "покупа́ть",
+  "tts": "покупа́ть"
+ },
+ {
+  "key": "irina-5c6d3c09",
+  "voice": "irina",
+  "text": "э́хо",
+  "tts": "э́хо"
+ },
+ {
+  "key": "irina-5c7f1694",
+  "voice": "irina",
+  "text": "Росси́я",
+  "tts": "Росси́я"
+ },
+ {
+  "key": "irina-5d7c9e2a",
+  "voice": "irina",
+  "text": "интере́сный",
+  "tts": "интере́сный"
+ },
+ {
+  "key": "irina-5d8ae848",
+  "voice": "irina",
+  "text": "по-ру́сски",
+  "tts": "по-ру́сски"
+ },
+ {
+  "key": "irina-5e64ad8e",
+  "voice": "irina",
+  "text": "кот",
+  "tts": "кот"
+ },
+ {
+  "key": "irina-5ee3d5dd",
+  "voice": "irina",
+  "text": "Пря́мо и нале́во.",
+  "tts": "Пря́мо и нале́во."
+ },
+ {
+  "key": "irina-608f8370",
+  "voice": "irina",
+  "text": "ве́чер",
+  "tts": "ве́чер"
+ },
+ {
+  "key": "irina-60fc546a",
+  "voice": "irina",
+  "text": "они́",
+  "tts": "они́"
+ },
+ {
+  "key": "irina-61e7ebf5",
+  "voice": "irina",
+  "text": "дочь",
+  "tts": "дочь"
+ },
+ {
+  "key": "irina-622eb703",
+  "voice": "irina",
+  "text": "молодо́й",
+  "tts": "молодо́й"
+ },
+ {
+  "key": "irina-622ebf28",
+  "voice": "irina",
+  "text": "пло́хо",
+  "tts": "пло́хо"
+ },
+ {
+  "key": "irina-6246e1d9",
+  "voice": "irina",
+  "text": "сала́т",
+  "tts": "сала́т"
+ },
+ {
+  "key": "irina-63502243",
+  "voice": "irina",
+  "text": "оди́ннадцать",
+  "tts": "оди́ннадцать"
+ },
+ {
+  "key": "irina-64c323c2",
+  "voice": "irina",
+  "text": "лете́ть",
+  "tts": "лете́ть"
+ },
+ {
+  "key": "irina-64f10e95",
+  "voice": "irina",
+  "text": "Где ты живёшь?",
+  "tts": "Где ты живёшь?"
+ },
+ {
+  "key": "irina-650f1072",
+  "voice": "irina",
+  "text": "ю́бка",
+  "tts": "ю́бка"
+ },
+ {
+  "key": "irina-66b6b062",
+  "voice": "irina",
+  "text": "меня́",
+  "tts": "меня́"
+ },
+ {
+  "key": "irina-676edef9",
+  "voice": "irina",
+  "text": "Меня́ зову́т …",
+  "tts": "Меня́ зову́т …"
+ },
+ {
+  "key": "irina-67c3daeb",
+  "voice": "irina",
+  "text": "воскресе́нье",
+  "tts": "воскресе́нье"
+ },
+ {
+  "key": "irina-68de73d7",
+  "voice": "irina",
+  "text": "де́вять",
+  "tts": "де́вять"
+ },
+ {
+  "key": "irina-698727e6",
+  "voice": "irina",
+  "text": "кто",
+  "tts": "кто"
+ },
+ {
+  "key": "irina-699e4cdb",
+  "voice": "irina",
+  "text": "До свида́ния!",
+  "tts": "Досвида́ния!"
+ },
+ {
+  "key": "irina-6a5fea77",
+  "voice": "irina",
+  "text": "Вы говори́те по-ру́сски?",
+  "tts": "Вы говори́те по-ру́сски?"
+ },
+ {
+  "key": "irina-6b0508be",
+  "voice": "irina",
+  "text": "трина́дцать",
+  "tts": "трина́дцать"
+ },
+ {
+  "key": "irina-6b97198a",
+  "voice": "irina",
+  "text": "ме́дленнее",
+  "tts": "ме́дленнее"
+ },
+ {
+  "key": "irina-6e658a32",
+  "voice": "irina",
+  "text": "ба́бушка",
+  "tts": "ба́бушка"
+ },
+ {
+  "key": "irina-6eb30200",
+  "voice": "irina",
+  "text": "мужчи́на",
+  "tts": "мужчи́на"
+ },
+ {
+  "key": "irina-6f66c576",
+  "voice": "irina",
+  "text": "бале́т",
+  "tts": "бале́т"
+ },
+ {
+  "key": "irina-707a9321",
+  "voice": "irina",
+  "text": "телефо́н",
+  "tts": "телефо́н"
+ },
+ {
+  "key": "irina-70828f7e",
+  "voice": "irina",
+  "text": "Швейца́рия",
+  "tts": "Швейца́рия"
+ },
+ {
+  "key": "irina-7260d858",
+  "voice": "irina",
+  "text": "вино́",
+  "tts": "вино́"
+ },
+ {
+  "key": "irina-750295f4",
+  "voice": "irina",
+  "text": "доро́га",
+  "tts": "доро́га"
+ },
+ {
+  "key": "irina-774ac1bb",
+  "voice": "irina",
+  "text": "почему́",
+  "tts": "почему́"
+ },
+ {
+  "key": "irina-779561e3",
+  "voice": "irina",
+  "text": "ма́ленький",
+  "tts": "ма́ленький"
+ },
+ {
+  "key": "irina-77b191c8",
+  "voice": "irina",
+  "text": "Счёт, пожа́луйста!",
+  "tts": "Счёт, пожа́луйста!"
+ },
+ {
+  "key": "irina-78406946",
+  "voice": "irina",
+  "text": "нос",
+  "tts": "нос"
+ },
+ {
+  "key": "irina-7a3a2fa6",
+  "voice": "irina",
+  "text": "говори́ть",
+  "tts": "говори́ть"
+ },
+ {
+  "key": "irina-7a57c249",
+  "voice": "irina",
+  "text": "путеше́ствие",
+  "tts": "путеше́ствие"
+ },
+ {
+  "key": "irina-7ac53b20",
+  "voice": "irina",
+  "text": "гита́ра",
+  "tts": "гита́ра"
+ },
+ {
+  "key": "irina-7b4e7e79",
+  "voice": "irina",
+  "text": "студе́нт",
+  "tts": "студе́нт"
+ },
+ {
+  "key": "irina-7b94c077",
+  "voice": "irina",
+  "text": "Извини́те!",
+  "tts": "Извини́те!"
+ },
+ {
+  "key": "irina-7c195754",
+  "voice": "irina",
+  "text": "шокола́д",
+  "tts": "шокола́д"
+ },
+ {
+  "key": "irina-7c72eeb8",
+  "voice": "irina",
+  "text": "ста́рый",
+  "tts": "ста́рый"
+ },
+ {
+  "key": "irina-7ce5de97",
+  "voice": "irina",
+  "text": "ру́сский",
+  "tts": "ру́сский"
+ },
+ {
+  "key": "irina-7ebccd72",
+  "voice": "irina",
+  "text": "день",
+  "tts": "день"
+ },
+ {
+  "key": "irina-7f4a7b7a",
+  "voice": "irina",
+  "text": "семь",
+  "tts": "семь"
+ },
+ {
+  "key": "irina-7fb0a3b4",
+  "voice": "irina",
+  "text": "пятьдеся́т",
+  "tts": "пятьдеся́т"
+ },
+ {
+  "key": "irina-80098b03",
+  "voice": "irina",
+  "text": "кра́сный",
+  "tts": "кра́сный"
+ },
+ {
+  "key": "irina-8010667b",
+  "voice": "irina",
+  "text": "музе́й",
+  "tts": "музе́й"
+ },
+ {
+  "key": "irina-804b4730",
+  "voice": "irina",
+  "text": "ша",
+  "tts": "ша"
+ },
+ {
+  "key": "irina-81f2894e",
+  "voice": "irina",
+  "text": "по-англи́йски",
+  "tts": "по-англи́йски"
+ },
+ {
+  "key": "irina-82454823",
+  "voice": "irina",
+  "text": "четве́рг",
+  "tts": "четве́рг"
+ },
+ {
+  "key": "irina-83003e16",
+  "voice": "irina",
+  "text": "пока́",
+  "tts": "пока́"
+ },
+ {
+  "key": "irina-835a5673",
+  "voice": "irina",
+  "text": "юг",
+  "tts": "юг"
+ },
+ {
+  "key": "irina-84848b2a",
+  "voice": "irina",
+  "text": "краси́во",
+  "tts": "краси́во"
+ },
+ {
+  "key": "irina-84c746d9",
+  "voice": "irina",
+  "text": "плохо́й",
+  "tts": "плохо́й"
+ },
+ {
+  "key": "irina-85acb5a6",
+  "voice": "irina",
+  "text": "Приве́т! Как дела́?",
+  "tts": "Приве́т! Как дела́?"
+ },
+ {
+  "key": "irina-864d8f39",
+  "voice": "irina",
+  "text": "ща",
+  "tts": "ща"
+ },
+ {
+  "key": "irina-86917705",
+  "voice": "irina",
+  "text": "из",
+  "tts": "из"
+ },
+ {
+  "key": "irina-86f1bf32",
+  "voice": "irina",
+  "text": "Как тебя́ зову́т?",
+  "tts": "Как тебя́ зову́т?"
+ },
+ {
+  "key": "irina-87471502",
+  "voice": "irina",
+  "text": "молоко́",
+  "tts": "молоко́"
+ },
+ {
+  "key": "irina-87a27ec6",
+  "voice": "irina",
+  "text": "торт",
+  "tts": "торт"
+ },
+ {
+  "key": "irina-87af8dac",
+  "voice": "irina",
+  "text": "да",
+  "tts": "да"
+ },
+ {
+  "key": "irina-8b4de1e7",
+  "voice": "irina",
+  "text": "твёрдый знак",
+  "tts": "твёрдый знак"
+ },
+ {
+  "key": "irina-8c860adc",
+  "voice": "irina",
+  "text": "стол",
+  "tts": "стол"
+ },
+ {
+  "key": "irina-8e074712",
+  "voice": "irina",
+  "text": "па́спорт",
+  "tts": "па́спорт"
+ },
+ {
+  "key": "irina-8e0d3c33",
+  "voice": "irina",
+  "text": "брат",
+  "tts": "брат"
+ },
+ {
+  "key": "irina-8e2af3ff",
+  "voice": "irina",
+  "text": "мя́со",
+  "tts": "мя́со"
+ },
+ {
+  "key": "irina-8e4d9bd1",
+  "voice": "irina",
+  "text": "щи",
+  "tts": "щи"
+ },
+ {
+  "key": "irina-8e56acae",
+  "voice": "irina",
+  "text": "со́рок",
+  "tts": "со́рок"
+ },
+ {
+  "key": "irina-8e7848e5",
+  "voice": "irina",
+  "text": "ха",
+  "tts": "ха"
+ },
+ {
+  "key": "irina-8f9e5123",
+  "voice": "irina",
+  "text": "но",
+  "tts": "но"
+ },
+ {
+  "key": "irina-9099f687",
+  "voice": "irina",
+  "text": "Ничего́.",
+  "tts": "Ничего́."
+ },
+ {
+  "key": "irina-90a0914d",
+  "voice": "irina",
+  "text": "он",
+  "tts": "он"
+ },
+ {
+  "key": "irina-911027b2",
+  "voice": "irina",
+  "text": "она́",
+  "tts": "она́"
+ },
+ {
+  "key": "irina-919c262a",
+  "voice": "irina",
+  "text": "семья́",
+  "tts": "семья́"
+ },
+ {
+  "key": "irina-91a2472d",
+  "voice": "irina",
+  "text": "мочь",
+  "tts": "мочь"
+ },
+ {
+  "key": "irina-91cbe893",
+  "voice": "irina",
+  "text": "чёрный",
+  "tts": "чёрный"
+ },
+ {
+  "key": "irina-91d48919",
+  "voice": "irina",
+  "text": "пить",
+  "tts": "пить"
+ },
+ {
+  "key": "irina-91e806fa",
+  "voice": "irina",
+  "text": "мать",
+  "tts": "мать"
+ },
+ {
+  "key": "irina-91f0cd0e",
+  "voice": "irina",
+  "text": "ду́мать",
+  "tts": "ду́мать"
+ },
+ {
+  "key": "irina-92455d4b",
+  "voice": "irina",
+  "text": "челове́к",
+  "tts": "челове́к"
+ },
+ {
+  "key": "irina-931150ff",
+  "voice": "irina",
+  "text": "тут",
+  "tts": "тут"
+ },
+ {
+  "key": "irina-935d9200",
+  "voice": "irina",
+  "text": "оди́н",
+  "tts": "оди́н"
+ },
+ {
+  "key": "irina-9363ea60",
+  "voice": "irina",
+  "text": "ночь",
+  "tts": "ночь"
+ },
+ {
+  "key": "irina-95703918",
+  "voice": "irina",
+  "text": "че",
+  "tts": "че"
+ },
+ {
+  "key": "irina-9658a5f2",
+  "voice": "irina",
+  "text": "трамва́й",
+  "tts": "трамва́й"
+ },
+ {
+  "key": "irina-96bc37a1",
+  "voice": "irina",
+  "text": "обе́д",
+  "tts": "обе́д"
+ },
+ {
+  "key": "irina-979b42b3",
+  "voice": "irina",
+  "text": "но́мер",
+  "tts": "но́мер"
+ },
+ {
+  "key": "irina-97a0f3e4",
+  "voice": "irina",
+  "text": "то́лько",
+  "tts": "то́лько"
+ },
+ {
+  "key": "irina-989e5f4e",
+  "voice": "irina",
+  "text": "не",
+  "tts": "не"
+ },
+ {
+  "key": "irina-992cc266",
+  "voice": "irina",
+  "text": "окно́",
+  "tts": "окно́"
+ },
+ {
+  "key": "irina-9af697be",
+  "voice": "irina",
+  "text": "сего́дня",
+  "tts": "сего́дня"
+ },
+ {
+  "key": "irina-9b73f667",
+  "voice": "irina",
+  "text": "хоро́ший",
+  "tts": "хоро́ший"
+ },
+ {
+  "key": "irina-9bd2f054",
+  "voice": "irina",
+  "text": "Кото́рый час?",
+  "tts": "Кото́рый час?"
+ },
+ {
+  "key": "irina-9be5be13",
+  "voice": "irina",
+  "text": "Он студе́нт?",
+  "tts": "Он студе́нт?"
+ },
+ {
+  "key": "irina-9c2411b2",
+  "voice": "irina",
+  "text": "Здра́вствуйте! Меня́ зову́т …",
+  "tts": "Здра́ствуйте! Меня́ зову́т …"
+ },
+ {
+  "key": "irina-9c5a14d3",
+  "voice": "irina",
+  "text": "два́дцать",
+  "tts": "два́дцать"
+ },
+ {
+  "key": "irina-9ca9d280",
+  "voice": "irina",
+  "text": "зэ",
+  "tts": "зэ"
+ },
+ {
+  "key": "irina-9cad7024",
+  "voice": "irina",
+  "text": "гэ",
+  "tts": "гэ"
+ },
+ {
+  "key": "irina-9e84650c",
+  "voice": "irina",
+  "text": "Как дела́?",
+  "tts": "Как дела́?"
+ },
+ {
+  "key": "irina-a0355260",
+  "voice": "irina",
+  "text": "жить",
+  "tts": "жить"
+ },
+ {
+  "key": "irina-a0cfcc23",
+  "voice": "irina",
+  "text": "Она́ не врач.",
+  "tts": "Она́ не врач."
+ },
+ {
+  "key": "irina-a14f42b6",
+  "voice": "irina",
+  "text": "вот",
+  "tts": "вот"
+ },
+ {
+  "key": "irina-a1675fc6",
+  "voice": "irina",
+  "text": "два",
+  "tts": "два"
+ },
+ {
+  "key": "irina-a1b96431",
+  "voice": "irina",
+  "text": "де́вочка",
+  "tts": "де́вочка"
+ },
+ {
+  "key": "irina-a33b4eca",
+  "voice": "irina",
+  "text": "неде́ля",
+  "tts": "неде́ля"
+ },
+ {
+  "key": "irina-a54690f4",
+  "voice": "irina",
+  "text": "есть",
+  "tts": "есть"
+ },
+ {
+  "key": "irina-a75989ed",
+  "voice": "irina",
+  "text": "аэропо́рт",
+  "tts": "аэропо́рт"
+ },
+ {
+  "key": "irina-a7675d1c",
+  "voice": "irina",
+  "text": "пожа́луйста",
+  "tts": "пожа́луйста"
+ },
+ {
+  "key": "irina-a8454e8f",
+  "voice": "irina",
+  "text": "Они́ говоря́т по-ру́сски.",
+  "tts": "Они́ говоря́т по-ру́сски."
+ },
+ {
+  "key": "irina-a8972261",
+  "voice": "irina",
+  "text": "немно́го",
+  "tts": "немно́го"
+ },
+ {
+  "key": "irina-a8b41b4e",
+  "voice": "irina",
+  "text": "Я из Герма́нии.",
+  "tts": "Я из Герма́нии."
+ },
+ {
+  "key": "irina-a8fb5b03",
+  "voice": "irina",
+  "text": "уже́",
+  "tts": "уже́"
+ },
+ {
+  "key": "irina-aabac61e",
+  "voice": "irina",
+  "text": "ро́за",
+  "tts": "ро́за"
+ },
+ {
+  "key": "irina-aae005a8",
+  "voice": "irina",
+  "text": "краси́вый",
+  "tts": "краси́вый"
+ },
+ {
+  "key": "irina-ab943589",
+  "voice": "irina",
+  "text": "фо́то",
+  "tts": "фо́то"
+ },
+ {
+  "key": "irina-aca7fb7a",
+  "voice": "irina",
+  "text": "друг",
+  "tts": "друг"
+ },
+ {
+  "key": "irina-adbc6030",
+  "voice": "irina",
+  "text": "и",
+  "tts": "и"
+ },
+ {
+  "key": "irina-ae16dbd4",
+  "voice": "irina",
+  "text": "Чай с лимо́ном, пожа́луйста.",
+  "tts": "Чай с лимо́ном, пожа́луйста."
+ },
+ {
+  "key": "irina-ae38012c",
+  "voice": "irina",
+  "text": "авто́бус",
+  "tts": "авто́бус"
+ },
+ {
+  "key": "irina-ae7057e2",
+  "voice": "irina",
+  "text": "больни́ца",
+  "tts": "больни́ца"
+ },
+ {
+  "key": "irina-af295f94",
+  "voice": "irina",
+  "text": "тебя́",
+  "tts": "тебя́"
+ },
+ {
+  "key": "irina-af6088a7",
+  "voice": "irina",
+  "text": "здесь",
+  "tts": "здесь"
+ },
+ {
+  "key": "irina-aff37beb",
+  "voice": "irina",
+  "text": "студе́нтка",
+  "tts": "студе́нтка"
+ },
+ {
+  "key": "irina-b0d2ffc2",
+  "voice": "irina",
+  "text": "Хорошо́, спаси́бо. А у вас?",
+  "tts": "Хорошо́, спаси́бо. А у вас?"
+ },
+ {
+  "key": "irina-b1089315",
+  "voice": "irina",
+  "text": "идти́",
+  "tts": "идти́"
+ },
+ {
+  "key": "irina-b190a728",
+  "voice": "irina",
+  "text": "шко́ла",
+  "tts": "шко́ла"
+ },
+ {
+  "key": "irina-b33dc7d0",
+  "voice": "irina",
+  "text": "В Па́нкове.",
+  "tts": "В Па́нкове."
+ },
+ {
+  "key": "irina-b3ae33ba",
+  "voice": "irina",
+  "text": "мак",
+  "tts": "мак"
+ },
+ {
+  "key": "irina-b3bc69a2",
+  "voice": "irina",
+  "text": "о",
+  "tts": "о"
+ },
+ {
+  "key": "irina-b4655ae1",
+  "voice": "irina",
+  "text": "вас",
+  "tts": "вас"
+ },
+ {
+  "key": "irina-b51d920c",
+  "voice": "irina",
+  "text": "норма́льно",
+  "tts": "норма́льно"
+ },
+ {
+  "key": "irina-b544e17d",
+  "voice": "irina",
+  "text": "па́па",
+  "tts": "па́па"
+ },
+ {
+  "key": "irina-b5bc6cc8",
+  "voice": "irina",
+  "text": "а",
+  "tts": "а"
+ },
+ {
+  "key": "irina-b67ae01d",
+  "voice": "irina",
+  "text": "Где туале́т?",
+  "tts": "Где туале́т?"
+ },
+ {
+  "key": "irina-b6db1ac7",
+  "voice": "irina",
+  "text": "Как вас зову́т?",
+  "tts": "Как вас зову́т?"
+ },
+ {
+  "key": "irina-b7bc6fee",
+  "voice": "irina",
+  "text": "в",
+  "tts": "в"
+ },
+ {
+  "key": "irina-b80cc07c",
+  "voice": "irina",
+  "text": "жёлтый",
+  "tts": "жёлтый"
+ },
+ {
+  "key": "irina-b817593c",
+  "voice": "irina",
+  "text": "шесть",
+  "tts": "шесть"
+ },
+ {
+  "key": "irina-b859ce11",
+  "voice": "irina",
+  "text": "хор",
+  "tts": "хор"
+ },
+ {
+  "key": "irina-b8a172c2",
+  "voice": "irina",
+  "text": "чита́ть",
+  "tts": "чита́ть"
+ },
+ {
+  "key": "irina-b99a8181",
+  "voice": "irina",
+  "text": "муж",
+  "tts": "муж"
+ },
+ {
+  "key": "irina-b9d18c8a",
+  "voice": "irina",
+  "text": "холо́дный",
+  "tts": "холо́дный"
+ },
+ {
+  "key": "irina-ba926866",
+  "voice": "irina",
+  "text": "пое́здка",
+  "tts": "пое́здка"
+ },
+ {
+  "key": "irina-babc74a7",
+  "voice": "irina",
+  "text": "е",
+  "tts": "е"
+ },
+ {
+  "key": "irina-bc9f68dd",
+  "voice": "irina",
+  "text": "двена́дцать",
+  "tts": "двена́дцать"
+ },
+ {
+  "key": "irina-bcafe11b",
+  "voice": "irina",
+  "text": "дэ",
+  "tts": "дэ"
+ },
+ {
+  "key": "irina-bcfb1c83",
+  "voice": "irina",
+  "text": "Берли́н",
+  "tts": "Берли́н"
+ },
+ {
+  "key": "irina-be9598ef",
+  "voice": "irina",
+  "text": "Я живу́ в Берли́не.",
+  "tts": "Я живу́ в Берли́не."
+ },
+ {
+  "key": "irina-bee60fc4",
+  "voice": "irina",
+  "text": "журна́л",
+  "tts": "журна́л"
+ },
+ {
+  "key": "irina-bf1473d4",
+  "voice": "irina",
+  "text": "когда́",
+  "tts": "когда́"
+ },
+ {
+  "key": "irina-bf34aa6a",
+  "voice": "irina",
+  "text": "То́же хорошо́.",
+  "tts": "То́же хорошо́."
+ },
+ {
+  "key": "irina-c09b00a2",
+  "voice": "irina",
+  "text": "бэ",
+  "tts": "бэ"
+ },
+ {
+  "key": "irina-c11920c7",
+  "voice": "irina",
+  "text": "съесть",
+  "tts": "съесть"
+ },
+ {
+  "key": "irina-c163b269",
+  "voice": "irina",
+  "text": "тэ",
+  "tts": "тэ"
+ },
+ {
+  "key": "irina-c195201c",
+  "voice": "irina",
+  "text": "до́брый ве́чер",
+  "tts": "до́брый ве́чер"
+ },
+ {
+  "key": "irina-c27a1571",
+  "voice": "irina",
+  "text": "понеде́льник",
+  "tts": "понеде́льник"
+ },
+ {
+  "key": "irina-c27e4f22",
+  "voice": "irina",
+  "text": "Меня́ зову́т А́нна.",
+  "tts": "Меня́ зову́т А́нна."
+ },
+ {
+  "key": "irina-c32810e5",
+  "voice": "irina",
+  "text": "карто́шка",
+  "tts": "карто́шка"
+ },
+ {
+  "key": "irina-c363b58f",
+  "voice": "irina",
+  "text": "ты",
+  "tts": "ты"
+ },
+ {
+  "key": "irina-c4941f4e",
+  "voice": "irina",
+  "text": "Я из Герма́нии, из Мю́нхена. А вы?",
+  "tts": "Я из Герма́нии, из Мю́нхена. А вы?"
+ },
+ {
+  "key": "irina-c6ed7ddb",
+  "voice": "irina",
+  "text": "год",
+  "tts": "год"
+ },
+ {
+  "key": "irina-c6fc7658",
+  "voice": "irina",
+  "text": "мя́гкий знак",
+  "tts": "мя́гкий знак"
+ },
+ {
+  "key": "irina-c7738561",
+  "voice": "irina",
+  "text": "Они́ живу́т в Москве́.",
+  "tts": "Они́ живу́т в Москве́."
+ },
+ {
+  "key": "irina-c817e6e4",
+  "voice": "irina",
+  "text": "но́вый",
+  "tts": "но́вый"
+ },
+ {
+  "key": "irina-c8c98c73",
+  "voice": "irina",
+  "text": "Как его́ зову́т?",
+  "tts": "Как его́ зову́т?"
+ },
+ {
+  "key": "irina-c8fe7d13",
+  "voice": "irina",
+  "text": "учи́ть",
+  "tts": "учи́ть"
+ },
+ {
+  "key": "irina-c9a766a4",
+  "voice": "irina",
+  "text": "мир",
+  "tts": "мир"
+ },
+ {
+  "key": "irina-c9a9ecfb",
+  "voice": "irina",
+  "text": "яйцо́",
+  "tts": "яйцо́"
+ },
+ {
+  "key": "irina-ca7fb61a",
+  "voice": "irina",
+  "text": "Здра́вствуйте, Ната́лья Серге́евна!",
+  "tts": "Здра́ствуйте, Ната́лья Серге́евна!"
+ },
+ {
+  "key": "irina-cb5b907a",
+  "voice": "irina",
+  "text": "Я немно́го говорю́ по-ру́сски.",
+  "tts": "Я немно́го говорю́ по-ру́сски."
+ },
+ {
+  "key": "irina-cb7189e3",
+  "voice": "irina",
+  "text": "Герма́ния",
+  "tts": "Герма́ния"
+ },
+ {
+  "key": "irina-cbcb04c1",
+  "voice": "irina",
+  "text": "компью́тер",
+  "tts": "компью́тер"
+ },
+ {
+  "key": "irina-cbd588ae",
+  "voice": "irina",
+  "text": "ша́пка",
+  "tts": "ша́пка"
+ },
+ {
+  "key": "irina-cbfad0b0",
+  "voice": "irina",
+  "text": "большо́й",
+  "tts": "большо́й"
+ },
+ {
+  "key": "irina-ccc588d6",
+  "voice": "irina",
+  "text": "я́блоко",
+  "tts": "я́блоко"
+ },
+ {
+  "key": "irina-cd7ab0a2",
+  "voice": "irina",
+  "text": "бе́лый",
+  "tts": "бе́лый"
+ },
+ {
+  "key": "irina-ce05b761",
+  "voice": "irina",
+  "text": "ла́мпа",
+  "tts": "ла́мпа"
+ },
+ {
+  "key": "irina-ce79200b",
+  "voice": "irina",
+  "text": "ры́нок",
+  "tts": "ры́нок"
+ },
+ {
+  "key": "irina-cfbcf4a1",
+  "voice": "irina",
+  "text": "вокза́л",
+  "tts": "вокза́л"
+ },
+ {
+  "key": "irina-d104682b",
+  "voice": "irina",
+  "text": "де́лать",
+  "tts": "де́лать"
+ },
+ {
+  "key": "irina-d1408b76",
+  "voice": "irina",
+  "text": "А что э́то?",
+  "tts": "А что э́то?"
+ },
+ {
+  "key": "irina-d1c08823",
+  "voice": "irina",
+  "text": "се́рый",
+  "tts": "се́рый"
+ },
+ {
+  "key": "irina-d1e4e52b",
+  "voice": "irina",
+  "text": "ма́ма",
+  "tts": "ма́ма"
+ },
+ {
+  "key": "irina-d24c7f43",
+  "voice": "irina",
+  "text": "до́ктор",
+  "tts": "до́ктор"
+ },
+ {
+  "key": "irina-d32a62e6",
+  "voice": "irina",
+  "text": "Я не понима́ю.",
+  "tts": "Я не понима́ю."
+ },
+ {
+  "key": "irina-d359652d",
+  "voice": "irina",
+  "text": "— Как дела́? — Хорошо́, спаси́бо. А у тебя́?",
+  "tts": "— Как дела́? — Хорошо́, спаси́бо. А у тебя́?"
+ },
+ {
+  "key": "irina-d3aeac77",
+  "voice": "irina",
+  "text": "ма́сло",
+  "tts": "ма́сло"
+ },
+ {
+  "key": "irina-d4bc2a82",
+  "voice": "irina",
+  "text": "час",
+  "tts": "час"
+ },
+ {
+  "key": "irina-d6136403",
+  "voice": "irina",
+  "text": "далеко́",
+  "tts": "далеко́"
+ },
+ {
+  "key": "irina-d711d407",
+  "voice": "irina",
+  "text": "сын",
+  "tts": "сын"
+ },
+ {
+  "key": "irina-d779af38",
+  "voice": "irina",
+  "text": "пять",
+  "tts": "пять"
+ },
+ {
+  "key": "irina-d8921234",
+  "voice": "irina",
+  "text": "всегда́",
+  "tts": "всегда́"
+ },
+ {
+  "key": "irina-d8af2124",
+  "voice": "irina",
+  "text": "по́езд",
+  "tts": "по́езд"
+ },
+ {
+  "key": "irina-d8ec85c6",
+  "voice": "irina",
+  "text": "Макс, кто э́то?",
+  "tts": "Макс, кто э́то?"
+ },
+ {
+  "key": "irina-d918c6e5",
+  "voice": "irina",
+  "text": "суп",
+  "tts": "суп"
+ },
+ {
+  "key": "irina-da11d8c0",
+  "voice": "irina",
+  "text": "сыр",
+  "tts": "сыр"
+ },
+ {
+  "key": "irina-da1b070f",
+  "voice": "irina",
+  "text": "сто",
+  "tts": "сто"
+ },
+ {
+  "key": "irina-da3e7a6d",
+  "voice": "irina",
+  "text": "Приве́т, Макс!",
+  "tts": "Приве́т, Макс!"
+ },
+ {
+  "key": "irina-db007be3",
+  "voice": "irina",
+  "text": "жена́",
+  "tts": "жена́"
+ },
+ {
+  "key": "irina-dd2dc115",
+  "voice": "irina",
+  "text": "Говори́те, пожа́луйста, ме́дленнее.",
+  "tts": "Говори́те, пожа́луйста, ме́дленнее."
+ },
+ {
+  "key": "irina-ddfed5d8",
+  "voice": "irina",
+  "text": "де́сять",
+  "tts": "де́сять"
+ },
+ {
+  "key": "irina-de262ae7",
+  "voice": "irina",
+  "text": "До́брый ве́чер!",
+  "tts": "До́брый ве́чер!"
+ },
+ {
+  "key": "irina-df333d0f",
+  "voice": "irina",
+  "text": "сок",
+  "tts": "сок"
+ },
+ {
+  "key": "irina-e09d7199",
+  "voice": "irina",
+  "text": "вэ",
+  "tts": "вэ"
+ },
+ {
+  "key": "irina-e0a9a8c3",
+  "voice": "irina",
+  "text": "Приве́т! Меня́ зову́т Ле́на.",
+  "tts": "Приве́т! Меня́ зову́т Ле́на."
+ },
+ {
+  "key": "irina-e16e7225",
+  "voice": "irina",
+  "text": "цэ",
+  "tts": "цэ"
+ },
+ {
+  "key": "irina-e1e4edad",
+  "voice": "irina",
+  "text": "У меня́ больша́я семья́.",
+  "tts": "У меня́ больша́я семья́."
+ },
+ {
+  "key": "irina-e234cdfc",
+  "voice": "irina",
+  "text": "бли́зко",
+  "tts": "бли́зко"
+ },
+ {
+  "key": "irina-e28161b4",
+  "voice": "irina",
+  "text": "теа́тр",
+  "tts": "теа́тр"
+ },
+ {
+  "key": "irina-e29d74bf",
+  "voice": "irina",
+  "text": "вы",
+  "tts": "вы"
+ },
+ {
+  "key": "irina-e32efd10",
+  "voice": "irina",
+  "text": "рот",
+  "tts": "рот"
+ },
+ {
+  "key": "irina-e33ff425",
+  "voice": "irina",
+  "text": "его́",
+  "tts": "его́"
+ },
+ {
+  "key": "irina-e3548159",
+  "voice": "irina",
+  "text": "суббо́та",
+  "tts": "суббо́та"
+ },
+ {
+  "key": "irina-e3c7540f",
+  "voice": "irina",
+  "text": "Извини́те, я не понима́ю. Говори́те, пожа́луйста, ме́дленнее.",
+  "tts": "Извини́те, я не понима́ю. Говори́те, пожа́луйста, ме́дленнее."
+ },
+ {
+  "key": "irina-e42f4047",
+  "voice": "irina",
+  "text": "ма́льчик",
+  "tts": "ма́льчик"
+ },
+ {
+  "key": "irina-e52934a5",
+  "voice": "irina",
+  "text": "Хорошо́!",
+  "tts": "Хорошо́!"
+ },
+ {
+  "key": "irina-e5444490",
+  "voice": "irina",
+  "text": "лю́ди",
+  "tts": "лю́ди"
+ },
+ {
+  "key": "irina-e652db78",
+  "voice": "irina",
+  "text": "как",
+  "tts": "как"
+ },
+ {
+  "key": "irina-e69c2b64",
+  "voice": "irina",
+  "text": "Взаи́мно!",
+  "tts": "Взаи́мно!"
+ },
+ {
+  "key": "irina-e8ca52a9",
+  "voice": "irina",
+  "text": "что",
+  "tts": "что"
+ },
+ {
+  "key": "irina-eb049c9e",
+  "voice": "irina",
+  "text": "то́же",
+  "tts": "то́же"
+ },
+ {
+  "key": "irina-eb247296",
+  "voice": "irina",
+  "text": "отку́да",
+  "tts": "отку́да"
+ },
+ {
+  "key": "irina-ebf1f121",
+  "voice": "irina",
+  "text": "ещё",
+  "tts": "ещё"
+ },
+ {
+  "key": "irina-eca5d342",
+  "voice": "irina",
+  "text": "её",
+  "tts": "её"
+ },
+ {
+  "key": "irina-ecbc504a",
+  "voice": "irina",
+  "text": "чай",
+  "tts": "чай"
+ },
+ {
+  "key": "irina-ecef5241",
+  "voice": "irina",
+  "text": "ка́рта",
+  "tts": "ка́рта"
+ },
+ {
+  "key": "irina-ee71d61f",
+  "voice": "irina",
+  "text": "по́чта",
+  "tts": "по́чта"
+ },
+ {
+  "key": "irina-eeef4c7e",
+  "voice": "irina",
+  "text": "гости́ница",
+  "tts": "гости́ница"
+ },
+ {
+  "key": "irina-ef52f195",
+  "voice": "irina",
+  "text": "ты́сяча",
+  "tts": "ты́сяча"
+ },
+ {
+  "key": "irina-f0bf22c0",
+  "voice": "irina",
+  "text": "такси́",
+  "tts": "такси́"
+ },
+ {
+  "key": "irina-f15ccf29",
+  "voice": "irina",
+  "text": "а́том",
+  "tts": "а́том"
+ },
+ {
+  "key": "irina-f1ca3f67",
+  "voice": "irina",
+  "text": "са́хар",
+  "tts": "са́хар"
+ },
+ {
+  "key": "irina-f1d1e022",
+  "voice": "irina",
+  "text": "центр",
+  "tts": "центр"
+ },
+ {
+  "key": "irina-f46a9a73",
+  "voice": "irina",
+  "text": "самолёт",
+  "tts": "самолёт"
+ },
+ {
+  "key": "irina-f47f616c",
+  "voice": "irina",
+  "text": "Оди́н биле́т, пожа́луйста.",
+  "tts": "Оди́н биле́т, пожа́луйста."
+ },
+ {
+  "key": "irina-f5a000eb",
+  "voice": "irina",
+  "text": "Пра́вда? Я то́же живу́ в Берли́не!",
+  "tts": "Пра́вда? Я то́же живу́ в Берли́не!"
+ },
+ {
+  "key": "irina-f5c9cb09",
+  "voice": "irina",
+  "text": "фру́кты",
+  "tts": "фру́кты"
+ },
+ {
+  "key": "irina-f6def224",
+  "voice": "irina",
+  "text": "оте́ц",
+  "tts": "оте́ц"
+ },
+ {
+  "key": "irina-f76f17c1",
+  "voice": "irina",
+  "text": "четы́ре",
+  "tts": "четы́ре"
+ },
+ {
+  "key": "irina-f86f834e",
+  "voice": "irina",
+  "text": "быть",
+  "tts": "быть"
+ },
+ {
+  "key": "irina-f8a0dd26",
+  "voice": "irina",
+  "text": "Ты говори́шь по-англи́йски?",
+  "tts": "Ты говори́шь по-англи́йски?"
+ },
+ {
+  "key": "irina-f8de6661",
+  "voice": "irina",
+  "text": "апте́ка",
+  "tts": "апте́ка"
+ },
+ {
+  "key": "irina-f96f3d75",
+  "voice": "irina",
+  "text": "Здра́вствуйте!",
+  "tts": "Здра́ствуйте!"
+ },
+ {
+  "key": "irina-f9ac1328",
+  "voice": "irina",
+  "text": "кори́чневый",
+  "tts": "кори́чневый"
+ },
+ {
+  "key": "irina-fa0aac3e",
+  "voice": "irina",
+  "text": "знать",
+  "tts": "знать"
+ },
+ {
+  "key": "irina-fa8a5d18",
+  "voice": "irina",
+  "text": "до свида́ния",
+  "tts": "досвида́ния"
+ },
+ {
+  "key": "irina-faac7890",
+  "voice": "irina",
+  "text": "соль",
+  "tts": "соль"
+ },
+ {
+  "key": "irina-facac5e4",
+  "voice": "irina",
+  "text": "университе́т",
+  "tts": "университе́т"
+ },
+ {
+  "key": "irina-fbed2026",
+  "voice": "irina",
+  "text": "хорошо́",
+  "tts": "хорошо́"
+ },
+ {
+  "key": "irina-fbfdeef0",
+  "voice": "irina",
+  "text": "сестра́",
+  "tts": "сестра́"
+ },
+ {
+  "key": "irina-fc7a4c2f",
+  "voice": "irina",
+  "text": "вода́",
+  "tts": "вода́"
+ },
+ {
+  "key": "irina-fc7e12d9",
+  "voice": "irina",
+  "text": "во́семь",
+  "tts": "во́семь"
+ },
+ {
+  "key": "irina-fca379e8",
+  "voice": "irina",
+  "text": "пэ",
+  "tts": "пэ"
+ },
+ {
+  "key": "irina-fcd1966f",
+  "voice": "irina",
+  "text": "Повтори́те, пожа́луйста.",
+  "tts": "Повтори́те, пожа́луйста."
+ },
+ {
+  "key": "irina-fda7cb0c",
+  "voice": "irina",
+  "text": "чемода́н",
+  "tts": "чемода́н"
+ },
+ {
+  "key": "irina-fe9b67c4",
+  "voice": "irina",
+  "text": "Нет, он не студе́нт.",
+  "tts": "Нет, он не студе́нт."
+ },
+ {
+  "key": "irina-fec434f4",
+  "voice": "irina",
+  "text": "си́ний",
+  "tts": "си́ний"
+ }
+]

@@ -6,7 +6,7 @@ export type QueueItem = { kind: 'review'; card: CardRecord; word: Word } | { kin
 
 /** Number of new words introduced today (recognition cards created since midnight). */
 export const introducedToday = (cards: CardRecord[], now = Date.now()) =>
-  cards.filter((c) => c.dir === 'ru-de' && c.introducedAt >= startOfDay(new Date(now))).length;
+  cards.filter((c) => c.dir === 'ru-de' && c.source !== 'lesson' && c.introducedAt >= startOfDay(new Date(now))).length;
 
 export const dueCards = (cards: CardRecord[], wordsById: Map<string, Word>, now = Date.now(), topic?: string) =>
   cards

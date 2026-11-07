@@ -6,7 +6,7 @@ import { buildQueue, introducedToday } from '../src/features/vocab/queue';
 import { dedupe, parseCsv, toCsv } from '../src/features/vocab/csv';
 
 describe('vocabulary content', () => {
-  it('has 10 topics with ≥ 20 words each and unique ids', () => {
+  it('has 10 topic sets with ≥ 20 words each and unique ids', () => {
     expect(TOPICS).toHaveLength(10);
     for (const t of TOPICS) expect(t.words.length, t.id).toBeGreaterThanOrEqual(20);
     expect(new Set(BUILTIN_WORDS.map((w) => w.id)).size).toBe(BUILTIN_WORDS.length);
@@ -75,6 +75,10 @@ describe('queue', () => {
     expect(introducedToday(cards, now)).toBe(4);
     const q = buildQueue(words, cards, { topic: 'begruessung', newLimit: 6, now });
     expect(q.map((i) => i.kind)).toEqual(['review', 'review', 'review', 'new', 'review', 'new']);
+  });
+  it('does not count words added by lessons toward the daily limit', () => {
+    const cards = words.slice(0, 5).map((w) => ({ ...newCardRecord(w.id, 'ru-de', now - 60_000), source: 'lesson' as const }));
+    expect(introducedToday(cards, now)).toBe(0);
   });
   it('without topic only returns due reviews', () => {
     const cards = [{ ...newCardRecord(words[0].id, 'ru-de', now - 86400_000 * 3), due: now + 1000 }];

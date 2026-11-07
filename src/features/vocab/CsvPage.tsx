@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router';
-import { TOPICS } from '../../content/vocab';
+import { ALL_TOPICS as TOPICS } from '../../content/vocab';
 import { db } from '../../core/db';
 import { Button, Card, PageHeader } from '../../ui/ui';
 import { dedupe, downloadText, parseCsv, toCsv, type CsvRow } from './csv';

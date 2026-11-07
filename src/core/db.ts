@@ -14,6 +14,7 @@ export interface LessonProgress {
   id: string; // e.g. "0.1"
   done: boolean;
   bestScore: number; // 0–100
+  step?: number; // resume position of an unfinished lesson
   updatedAt: number;
 }
 
@@ -41,6 +42,8 @@ export interface CardRecord {
   state: number; // ts-fsrs State
   last_review?: number;
   introducedAt: number;
+  /** 'lesson' = added by finishing a course lesson (does not count toward the daily new-word limit). */
+  source?: 'lesson';
   updatedAt: number;
 }
 
@@ -131,14 +134,21 @@ export async function recordTrace(id: string, score: number) {
   await db.letters.put({ id, seen: true, correct: 0, wrong: 0, ...cur, bestTrace: score, updatedAt: Date.now() });
 }
 
-export async function completeLesson(id: string, score: number) {
+/** Saves a lesson result. A lesson counts as done when the score reaches `passMark`. */
+export async function completeLesson(id: string, score: number, passMark = 80) {
   const cur = await db.lessons.get(id);
   await db.lessons.put({
     id,
-    done: (cur?.done ?? false) || score >= 80,
+    done: (cur?.done ?? false) || score >= passMark,
     bestScore: Math.max(cur?.bestScore ?? 0, score),
+    step: 0,
     updatedAt: Date.now(),
   });
+}
+
+export async function saveLessonStep(id: string, step: number) {
+  const cur = await db.lessons.get(id);
+  await db.lessons.put({ id, done: cur?.done ?? false, bestScore: cur?.bestScore ?? 0, step, updatedAt: Date.now() });
 }
 
 export async function addActivity(seconds: number) {

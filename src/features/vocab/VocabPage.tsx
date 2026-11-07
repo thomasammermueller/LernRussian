@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Link, useNavigate } from 'react-router';
-import { TOPICS } from '../../content/vocab';
+import { ALL_TOPICS as TOPICS } from '../../content/vocab';
 import { useSettings } from '../../core/settings';
 import { Button, Card, PageHeader, ProgressBar } from '../../ui/ui';
 import { dueCards, introducedToday } from './queue';

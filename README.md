@@ -3,7 +3,17 @@
 Persönliche Russisch-Lern-App (A1–A2) für deutschsprachige Erwachsene ohne Vorkenntnisse.
 Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem **iPhone (als installierte Web-App)** und im **Browser**, komplett **offline-fähig**.
 
-## Stand: v0.2 – Alphabet & Vokabeltrainer
+## Stand: v0.3 – Alphabet, Vokabeltrainer & Einheit 1
+
+**Neu in v0.3 – Kurs Einheit 1 „Знако́мство“ (Kennenlernen):**
+- 5 Lektionen + Checkpoint: Dialoge, neue Wörter, Grammatik, Übungen, Aussprache, Abschluss mit Kann-Satz
+- **Dialog-Player:** Satz für Satz, Satz wiederholen/in Schleife, langsames Tempo, Übersetzung und Lautschrift ein-/ausblendbar, Erklärung pro Satz, Nachsprech-Modus mit Pausen
+- **Übungstypen:** Auswahl (auch Hörverstehen), Zuordnen, Lückentext, Satzbau, Übersetzen, Diktat
+- **Aussprache:** Vorbild anhören, sich selbst aufnehmen und vergleichen
+- Wörter einer Lektion wandern nach dem Abschluss automatisch in den Vokabeltrainer
+- **Echte Audiodateien** für alle 422 Wörter und Sätze (Piper TTS, weibliche/männliche Stimme), offline verfügbar (2,6 MB)
+- Grammatik-Übersicht unter „Nachschlagen“
+
 
 **Neu in v0.2 – Vokabeltrainer (Tab „Wörter“):**
 - 10 Themen mit 231 Wörtern (Begrüßung, Zahlen, Zeit, Familie, Essen, Stadt, Reisen, Farben, Verben, kleine Wörter) – alle mit Betonung, Lautschrift, teils Beispielsatz
@@ -28,6 +38,16 @@ npm install
 npm run dev      # Entwicklungsserver
 npm test         # Unit-Tests
 npm run build    # Produktions-Build nach dist/
+```
+
+**Audio neu erzeugen** (nach Änderungen an Inhalten; `npm test` meldet fehlende Aufnahmen):
+
+```bash
+pip install piper-tts
+# Stimmen ru_RU-irina-medium.onnx und ru_RU-dmitri-medium.onnx (+ .onnx.json) von
+# https://huggingface.co/rhasspy/piper-voices/tree/main/ru/ru_RU in einen Ordner laden
+npx vite-node tools/tts/collect.ts
+python3 tools/tts/generate.py --voices <ordner>
 ```
 
 **Veröffentlichen:** Einmalig im Repository unter *Settings → Pages → Source* „GitHub Actions“ wählen. Danach baut und veröffentlicht jeder Push auf `main` die App automatisch (`.github/workflows/deploy.yml`).

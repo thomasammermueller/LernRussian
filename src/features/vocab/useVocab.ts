@@ -1,6 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo } from 'react';
-import { BUILTIN_WORDS, TOPICS, wordId, type Word } from '../../content/vocab';
+import { ALL_TOPICS as TOPICS, BUILTIN_WORDS, wordId, type Word } from '../../content/vocab';
 import { db, type CardRecord, type UserSet } from '../../core/db';
 import { wordStatus, type WordStatus } from '../../core/srs';
 import { stripStress } from '../../core/text';
