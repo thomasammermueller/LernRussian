@@ -76,6 +76,7 @@ describe('audio', () => {
     expect(ttsText('дом')).toBe('дом');
     expect(ttsText('Чай. Без са́хара.')).toBe('Чай. Безса́хара.');
     expect(ttsText('Да, коне́чно.')).toBe('Да, коне́шно.');
+    expect(ttsText('Чу́вствуйте себя́ как до́ма!')).toBe('Чу́ствуйте себя́ как до́ма!');
   });
 });
 

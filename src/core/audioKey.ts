@@ -17,6 +17,7 @@ export function audioKey(text: string, voice: Voice = 'irina'): string {
  */
 const TTS_FIXES: [RegExp, string][] = [
   [/здра́?вствуй/gi, 'здра́ствуй'],
+  [/чу́?вств/gi, 'чу́ств'],
   [/шестьдеся́?т/gi, 'шыздися́т'],
   [/коне́?чно/gi, 'коне́шно'],
   // hundreds: unstressed vowels are reduced, the soft sign is not pronounced
