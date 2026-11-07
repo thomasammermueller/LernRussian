@@ -18,6 +18,10 @@ describe('lessons', () => {
   it('only reference vocabulary that exists in the word lists', () => {
     for (const l of ALL_LESSONS) for (const ru of l.vocab) expect(wordByRu(ru), `${l.id}: ${ru}`).toBeDefined();
   });
+  it('have Latin-only transliterations', () => {
+    for (const l of ALL_LESSONS)
+      for (const d of l.dialogs) for (const line of d.lines) expect(/[\u0400-\u04FF]/.test(line.translit), `${l.id}: ${line.translit}`).toBe(false);
+  });
   it('use only known speakers', () => {
     for (const l of ALL_LESSONS) for (const d of l.dialogs) for (const line of d.lines) expect(l.speakers[line.who], `${l.id} ${line.ru}`).toBeDefined();
   });

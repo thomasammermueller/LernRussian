@@ -22,6 +22,7 @@ describe('vocabulary content', () => {
   it('marks stress on every multi-syllable word and has a transliteration', () => {
     for (const w of BUILTIN_WORDS) {
       expect(w.translit, w.ru).toBeTruthy();
+      expect(/[\u0400-\u04FF]/.test(w.translit), `${w.ru}: ${w.translit}`).toBe(false);
       for (const token of w.ru.split(/[\s,.!?…]+/).filter(Boolean)) {
         const syl = (stripStress(token).toLowerCase().match(/[аеёиоуыэюя]/g) ?? []).length;
         // short function words (до, не, у …) may stay unstressed inside phrases
