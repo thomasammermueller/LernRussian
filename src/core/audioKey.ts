@@ -17,11 +17,13 @@ export function audioKey(text: string, voice: Voice = 'irina'): string {
  */
 const TTS_FIXES: [RegExp, string][] = [
   [/здра́?вствуй/gi, 'здра́ствуй'],
-  [/до свида́?ния/gi, 'досвида́ния'],
-  [/\bсо́?лнце/gi, 'со́нце'],
+  [/шестьдеся́?т/gi, 'шыздися́т'],
 ];
+
+/** Unstressed one-syllable prepositions are attached to the next word, otherwise the phonemizer stresses them. */
+const CLITICS = /(^|[\s,.!?—«(])([Дд]о) (?=[а-яёА-ЯЁ])/g;
 
 const keepCase = (match: string, rep: string) => (match[0] === match[0].toUpperCase() ? rep[0].toUpperCase() + rep.slice(1) : rep);
 
 export const ttsText = (text: string) =>
-  TTS_FIXES.reduce((t, [re, rep]) => t.replace(re, (m) => keepCase(m, rep)), text.normalize('NFC'));
+  TTS_FIXES.reduce((t, [re, rep]) => t.replace(re, (m) => keepCase(m, rep)), text.normalize('NFC')).replace(CLITICS, '$1$2');

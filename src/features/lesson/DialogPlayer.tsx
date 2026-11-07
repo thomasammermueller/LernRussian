@@ -156,7 +156,14 @@ export default function DialogPlayer({ dialog, speakers, showTranslitDefault }: 
           {playing ? '❚❚' : '▶'}
         </button>
         <CtrlButton label="Nächster Satz" onClick={() => go(1)}>⏭</CtrlButton>
-        <CtrlButton label="Satz in Schleife" active={loop} onClick={() => setLoop(!loop)}>🔁</CtrlButton>
+        <CtrlButton label="Satz in Schleife" active={loop} onClick={() => setLoop(!loop)}>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M17 2l4 4-4 4" />
+            <path d="M3 11V9a3 3 0 013-3h15" />
+            <path d="M7 22l-4-4 4-4" />
+            <path d="M21 13v2a3 3 0 01-3 3H3" />
+          </svg>
+        </CtrlButton>
         <CtrlButton label="Tempo" active={slow} onClick={() => setSlow(!slow)}>
           <span className="text-xs font-bold">{slow ? '0,75×' : '1×'}</span>
         </CtrlButton>

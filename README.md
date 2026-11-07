@@ -12,7 +12,9 @@ Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem
 - Hinweis auf „Heute“, wenn der Lernstand länger nicht gesichert wurde
 
 
-**Neu: Einheit 2 „Семья́“ (Familie & Menschen)** – 5 Lektionen + Checkpoint: Genus, мой/моя́/моё, у меня́ есть / нет, Berufe und в + Ort, Alter (год/го́да/лет), Plural. 47 neue Kurswörter, 105 neue Aufnahmen.
+**Neu: Einheit 3 „Чи́сла и вре́мя“ (Zahlen & Zeit)** – Zahlen 0–100, Preise (рубль/рубля́/рубле́й), Uhrzeit (час/часа́/часо́в), Termine (в сре́ду, в два часа́ дня), Verabredungen und Tageszeiten. 49 neue Kurswörter.
+
+**Einheit 2 „Семья́“ (Familie & Menschen)** – 5 Lektionen + Checkpoint: Genus, мой/моя́/моё, у меня́ есть / нет, Berufe und в + Ort, Alter (год/го́да/лет), Plural. 47 neue Kurswörter, 105 neue Aufnahmen.
 
 **Neu in v0.4:**
 - **Spracherkennung mit Auswertung:** „Sprechen & prüfen“ in jeder Lektion und im neuen **Aussprache-Trainer** (Nachschlagen). Ergebnis in Prozent, Buchstaben grün/rot, erkannter Text und konkrete Tipps zu typischen Fehlern Deutschsprachiger (ы, р, х, ж, щ, ц, weiche Konsonanten, Betonung).
