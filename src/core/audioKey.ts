@@ -1,0 +1,40 @@
+export type Voice = 'irina' | 'dmitri';
+
+/** FNV-1a 32-bit hash → stable file name for a (voice, text) pair. Shared by the app and the TTS tools. */
+export function audioKey(text: string, voice: Voice = 'irina'): string {
+  const s = `${voice}|${text.normalize('NFC').trim()}`;
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 0x01000193);
+  }
+  return `${voice}-${(h >>> 0).toString(16).padStart(8, '0')}`;
+}
+
+/**
+ * Pronunciation fixes for the speech synthesizer (espeak-based phonemizer):
+ * silent letters and clitics it would otherwise stress.
+ */
+const TTS_FIXES: [RegExp, string][] = [
+  [/здра́?вствуй/gi, 'здра́ствуй'],
+  [/чу́?вств/gi, 'чу́ств'],
+  [/со́?лнц/gi, 'со́нц'],
+  [/ску́?чно/gi, 'ску́шно'],
+  [/пра́?здни/gi, 'пра́зни'],
+  [/сча́?стлив/gi, 'сча́слив'],
+  [/счастли́в/gi, 'счасли́в'],
+  [/шестьдеся́?т/gi, 'шыздися́т'],
+  [/коне́?чно/gi, 'коне́шно'],
+  // hundreds: unstressed vowels are reduced, the soft sign is not pronounced
+  [/пятьсо́?т/gi, 'питсо́т'],
+  [/шестьсо́?т/gi, 'шыссо́т'],
+  [/девятьсо́?т/gi, 'дивитсо́т'],
+];
+
+/** Unstressed one-syllable prepositions are attached to the next word, otherwise the phonemizer stresses them. */
+const CLITICS = /(^|[\s,.!?—«(])([Дд]о|[Бб]ез) (?=[а-яёА-ЯЁ])/g;
+
+const keepCase = (match: string, rep: string) => (match[0] === match[0].toUpperCase() ? rep[0].toUpperCase() + rep.slice(1) : rep);
+
+export const ttsText = (text: string) =>
+  TTS_FIXES.reduce((t, [re, rep]) => t.replace(re, (m) => keepCase(m, rep)), text.normalize('NFC')).replace(CLITICS, '$1$2');
