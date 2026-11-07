@@ -12,7 +12,9 @@ Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem
 - Hinweis auf „Heute“, wenn der Lernstand länger nicht gesichert wurde
 
 
-**Neu: Einheit 3 „Чи́сла и вре́мя“ (Zahlen & Zeit)** – Zahlen 0–100, Preise (рубль/рубля́/рубле́й), Uhrzeit (час/часа́/часо́в), Termine (в сре́ду, в два часа́ дня), Verabredungen und Tageszeiten. 49 neue Kurswörter.
+**Neu: Einheit 4 „Еда́“ (Essen & Café)** – Bestellen im Café und Restaurant, хоте́ть, люби́ть, есть/пить, Akkusativ, с + Instrumental und без + Genitiv als feste Wendungen, Tischsitten. 39 neue Kurswörter.
+
+**Einheit 3 „Чи́сла и вре́мя“ (Zahlen & Zeit)** – Zahlen 0–100, Preise (рубль/рубля́/рубле́й), Uhrzeit (час/часа́/часо́в), Termine (в сре́ду, в два часа́ дня), Verabredungen und Tageszeiten. 49 neue Kurswörter.
 
 **Einheit 2 „Семья́“ (Familie & Menschen)** – 5 Lektionen + Checkpoint: Genus, мой/моя́/моё, у меня́ есть / нет, Berufe und в + Ort, Alter (год/го́да/лет), Plural. 47 neue Kurswörter, 105 neue Aufnahmen.
 
