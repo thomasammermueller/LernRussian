@@ -1,4 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie';
+import type { Word } from '../content/vocab';
 
 export interface LetterProgress {
   id: string; // lowercase letter
@@ -22,6 +23,49 @@ export interface DayActivity {
   updatedAt: number;
 }
 
+export type Direction = 'ru-de' | 'de-ru';
+
+/** FSRS card state, flattened for IndexedDB (dates as epoch ms). */
+export interface CardRecord {
+  id: string; // `${wordId}|${dir}`
+  wordId: string;
+  dir: Direction;
+  due: number;
+  stability: number;
+  difficulty: number;
+  elapsed_days: number;
+  scheduled_days: number;
+  learning_steps: number;
+  reps: number;
+  lapses: number;
+  state: number; // ts-fsrs State
+  last_review?: number;
+  introducedAt: number;
+  updatedAt: number;
+}
+
+export interface ReviewRecord {
+  id: string; // `${cardId}@${at}`
+  cardId: string;
+  rating: number;
+  stateBefore: number;
+  at: number;
+  ms: number;
+}
+
+export interface UserSet {
+  id: string;
+  name: string;
+  emoji: string;
+  updatedAt: number;
+  deleted?: boolean;
+}
+
+export interface UserWord extends Word {
+  updatedAt: number;
+  deleted?: boolean;
+}
+
 export interface Setting {
   key: string;
   value: unknown;
@@ -32,6 +76,10 @@ export class LernDB extends Dexie {
   lessons!: EntityTable<LessonProgress, 'id'>;
   activity!: EntityTable<DayActivity, 'date'>;
   settings!: EntityTable<Setting, 'key'>;
+  cards!: EntityTable<CardRecord, 'id'>;
+  reviews!: EntityTable<ReviewRecord, 'id'>;
+  userSets!: EntityTable<UserSet, 'id'>;
+  userWords!: EntityTable<UserWord, 'id'>;
 
   constructor() {
     super('lernrussian');
@@ -40,6 +88,12 @@ export class LernDB extends Dexie {
       lessons: 'id, updatedAt',
       activity: 'date',
       settings: 'key',
+    });
+    this.version(2).stores({
+      cards: 'id, wordId, due, updatedAt',
+      reviews: 'id, cardId, at',
+      userSets: 'id, updatedAt',
+      userWords: 'id, topic, updatedAt',
     });
   }
 }
@@ -114,45 +168,52 @@ export function computeStreak(days: DayActivity[], now = new Date()): number {
 // ---------- Backup ----------
 export interface Backup {
   app: 'lernrussian';
-  version: 1;
+  version: 1 | 2;
   exportedAt: string;
   letters: LetterProgress[];
   lessons: LessonProgress[];
   activity: DayActivity[];
   settings: Setting[];
+  cards?: CardRecord[];
+  reviews?: ReviewRecord[];
+  userSets?: UserSet[];
+  userWords?: UserWord[];
 }
 
 export async function exportBackup(): Promise<Backup> {
   return {
     app: 'lernrussian',
-    version: 1,
+    version: 2,
     exportedAt: new Date().toISOString(),
     letters: await db.letters.toArray(),
     lessons: await db.lessons.toArray(),
     activity: await db.activity.toArray(),
     settings: await db.settings.toArray(),
+    cards: await db.cards.toArray(),
+    reviews: await db.reviews.toArray(),
+    userSets: await db.userSets.toArray(),
+    userWords: await db.userWords.toArray(),
   };
 }
 
 /** Merges a backup into the local database: the newer record wins. */
 export async function importBackup(data: Backup) {
   if (data?.app !== 'lernrussian') throw new Error('Das ist keine LernRussian-Sicherung.');
-  await db.transaction('rw', [db.letters, db.lessons, db.activity, db.settings], async () => {
-    for (const [table, rows] of [
-      [db.letters, data.letters],
-      [db.lessons, data.lessons],
-      [db.activity, data.activity],
-    ] as const) {
+  const tables = [db.letters, db.lessons, db.activity, db.settings, db.cards, db.reviews, db.userSets, db.userWords];
+  await db.transaction('rw', tables, async () => {
+    const merge = async <T extends { updatedAt: number }>(table: { get(k: string): Promise<T | undefined>; put(r: T): Promise<unknown> }, rows: T[] | undefined, key: (r: T) => string) => {
       for (const row of rows ?? []) {
-        const key = 'id' in row ? row.id : (row as DayActivity).date;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const cur = await (table as any).get(key);
-        if (!cur || cur.updatedAt < row.updatedAt) {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          await (table as any).put(row);
-        }
+        const cur = await table.get(key(row));
+        if (!cur || cur.updatedAt < row.updatedAt) await table.put(row);
       }
-    }
+    };
+    await merge<LetterProgress>(db.letters, data.letters, (r) => r.id);
+    await merge<LessonProgress>(db.lessons, data.lessons, (r) => r.id);
+    await merge<DayActivity>(db.activity, data.activity, (r) => r.date);
+    await merge<CardRecord>(db.cards, data.cards, (r) => r.id);
+    await merge<UserSet>(db.userSets, data.userSets, (r) => r.id);
+    await merge<UserWord>(db.userWords, data.userWords, (r) => r.id);
+    if (data.reviews?.length) await db.reviews.bulkPut(data.reviews);
     for (const s of data.settings ?? []) await db.settings.put(s);
   });
 }

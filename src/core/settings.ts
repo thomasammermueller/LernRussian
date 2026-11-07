@@ -8,6 +8,8 @@ export interface Settings {
   keyboard: KeyboardLayout | 'system';
   speechRate: number;
   name: string;
+  newPerDay: number;
+  listenMode: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -16,6 +18,8 @@ export const DEFAULT_SETTINGS: Settings = {
   keyboard: 'phonetic',
   speechRate: 0.9,
   name: '',
+  newPerDay: 10,
+  listenMode: false,
 };
 
 export function useSettings(): Settings {

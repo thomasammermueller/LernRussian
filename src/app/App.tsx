@@ -9,6 +9,9 @@ import CoursePage from '../features/course/CoursePage';
 import AlphabetLessonPage from '../features/course/AlphabetLessonPage';
 import ReadingTestPage from '../features/course/ReadingTestPage';
 import VocabPage from '../features/vocab/VocabPage';
+import TopicPage from '../features/vocab/TopicPage';
+import StudyPage from '../features/vocab/StudyPage';
+import CsvPage from '../features/vocab/CsvPage';
 import ReferencePage from '../features/reference/ReferencePage';
 import AlphabetTablePage from '../features/alphabet/AlphabetTablePage';
 import LetterDetailPage from '../features/alphabet/LetterDetailPage';
@@ -37,6 +40,9 @@ export default function App() {
           <Route path="/kurs/alphabet/:group" element={<AlphabetLessonPage />} />
           <Route path="/kurs/lesetest" element={<ReadingTestPage />} />
           <Route path="/woerter" element={<VocabPage />} />
+          <Route path="/woerter/thema/:id" element={<TopicPage />} />
+          <Route path="/woerter/lernen" element={<StudyPage />} />
+          <Route path="/woerter/csv" element={<CsvPage />} />
           <Route path="/nachschlagen" element={<ReferencePage />} />
           <Route path="/nachschlagen/alphabet" element={<AlphabetTablePage />} />
           <Route path="/nachschlagen/alphabet/:id" element={<LetterDetailPage />} />

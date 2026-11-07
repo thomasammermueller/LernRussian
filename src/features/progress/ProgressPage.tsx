@@ -6,6 +6,7 @@ import { setSetting, useSettings } from '../../core/settings';
 import { hasRussianVoice, speak } from '../../core/speech';
 import { Button, Card, PageHeader } from '../../ui/ui';
 import { STAGE0 } from '../course/curriculum';
+import { countStatus, statusMap, useAllWords, useCards } from '../vocab/useVocab';
 
 const WEEKDAYS = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
 
@@ -14,6 +15,11 @@ export default function ProgressPage() {
   const activity = useLiveQuery(() => db.activity.toArray(), []) ?? [];
   const lessons = useLiveQuery(() => db.lessons.toArray(), []) ?? [];
   const letters = useLiveQuery(() => db.letters.toArray(), []) ?? [];
+  const words = useAllWords();
+  const cards = useCards() ?? [];
+  const reviews = useLiveQuery(() => db.reviews.where('at').above(Date.now() - 30 * 86400_000).toArray(), []) ?? [];
+  const wordCounts = countStatus(words, statusMap(cards));
+  const accuracy = reviews.length ? Math.round((reviews.filter((r) => r.rating >= 3).length / reviews.length) * 100) : null;
   const [msg, setMsg] = useState('');
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -65,6 +71,10 @@ export default function ProgressPage() {
         <Stat value={totalMin < 60 ? `${totalMin} Min.` : `${(totalMin / 60).toFixed(1)} h`} label="Lernzeit gesamt" />
         <Stat value={`${learned}/33`} label="Buchstaben gelernt" />
         <Stat value={`${lessonsDone}/${STAGE0.length}`} label="Lektionen" />
+        <Stat value={`${wordCounts.sicher}`} label="Wörter sicher" />
+        <Stat value={`${wordCounts.lernend}`} label="Wörter in Arbeit" />
+        <Stat value={`${reviews.length}`} label="Wiederholungen (30 T.)" />
+        <Stat value={accuracy === null ? '–' : `${accuracy} %`} label="gewusst (30 T.)" />
       </div>
 
       <Card>
@@ -128,6 +138,12 @@ export default function ProgressPage() {
             value={settings.dailyGoalMinutes}
             options={[5, 10, 15, 20, 30].map((m) => ({ v: m, l: String(m) }))}
             onChange={(v) => setSetting('dailyGoalMinutes', v)}
+          />
+          <Choice
+            label="Neue Wörter pro Tag"
+            value={settings.newPerDay}
+            options={[5, 10, 15, 20, 30].map((m) => ({ v: m, l: String(m) }))}
+            onChange={(v) => setSetting('newPerDay', v)}
           />
           <Choice
             label="Darstellung"

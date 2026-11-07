@@ -1,10 +1,13 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { useMemo } from 'react';
 import { Link } from 'react-router';
 import { ALPHABET } from '../../content/alphabet';
 import { computeStreak, db, isLetterLearned, today } from '../../core/db';
 import { useSettings } from '../../core/settings';
 import { Card, ProgressBar, Ring, SpeakButton } from '../../ui/ui';
 import { STAGE0 } from '../course/curriculum';
+import { dueCards, introducedToday } from '../vocab/queue';
+import { useAllWords, useCards } from '../vocab/useVocab';
 
 const greeting = (h: number) => (h < 11 ? 'До́брое у́тро' : h < 18 ? 'До́брый день' : 'До́брый ве́чер');
 
@@ -27,6 +30,11 @@ export default function TodayPage() {
   const nextLesson = STAGE0.find((i) => !done.has(i.id));
   const learned = letters.filter(isLetterLearned).length;
   const wod = wordOfTheDay();
+  const words = useAllWords();
+  const cards = useCards() ?? [];
+  const wordsById = useMemo(() => new Map(words.map((w) => [w.id, w])), [words]);
+  const due = dueCards(cards, wordsById).length;
+  const newToday = introducedToday(cards);
 
   return (
     <div className="space-y-4 pt-2">
@@ -65,7 +73,7 @@ export default function TodayPage() {
       ) : (
         <Card className="border-ok bg-ok-soft">
           <div className="font-semibold text-ok">🎉 Alphabet abgeschlossen!</div>
-          <div className="text-sm">Einheit 1 „Знакомство“ kommt mit dem nächsten Update. Bis dahin: Schreiben und Tippen üben.</div>
+          <div className="text-sm">Lerne jetzt jeden Tag ein paar Wörter – Einheit 1 „Знакомство“ kommt mit einem der nächsten Updates.</div>
         </Card>
       )}
 
@@ -78,11 +86,11 @@ export default function TodayPage() {
             <ProgressBar value={learned / 33} />
           </Card>
         </Link>
-        <Link to="/nachschlagen/tastatur">
-          <Card className="h-full">
-            <div className="text-2xl">⌨️</div>
-            <div className="font-semibold">Tippen üben</div>
-            <div className="text-sm text-muted">5 Minuten</div>
+        <Link to={due ? '/woerter/lernen' : '/woerter'}>
+          <Card className={`h-full ${due ? 'border-gold' : ''}`}>
+            <div className="text-2xl">🗂</div>
+            <div className="font-semibold">Wörter</div>
+            <div className="text-sm text-muted">{due ? `${due} fällig – jetzt wiederholen` : `${newToday}/${settings.newPerDay} neue heute`}</div>
           </Card>
         </Link>
       </div>
