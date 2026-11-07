@@ -18,6 +18,13 @@ describe('lessons', () => {
   it('only reference vocabulary that exists in the word lists', () => {
     for (const l of ALL_LESSONS) for (const ru of l.vocab) expect(wordByRu(ru), `${l.id}: ${ru}`).toBeDefined();
   });
+  it('contain no words mixing Latin and Cyrillic letters (typos)', () => {
+    const mixed = /[A-Za-z][\u0400-\u04FF]|[\u0400-\u04FF][A-Za-z]/;
+    for (const l of ALL_LESSONS) {
+      const words = JSON.stringify(l).split(/[\s"',.:;!?()«»—–…*/\\-]+/);
+      expect(words.filter((w) => mixed.test(w)), l.id).toEqual([]);
+    }
+  });
   it('have Latin-only transliterations', () => {
     for (const l of ALL_LESSONS)
       for (const d of l.dialogs) for (const line of d.lines) expect(/[\u0400-\u04FF]/.test(line.translit), `${l.id}: ${line.translit}`).toBe(false);
