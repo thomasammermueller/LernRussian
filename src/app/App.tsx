@@ -19,6 +19,7 @@ import KeyboardTrainerPage from '../features/keyboard/KeyboardTrainerPage';
 import ProgressPage from '../features/progress/ProgressPage';
 import LessonPage from '../features/lesson/LessonPage';
 import GrammarPage from '../features/reference/GrammarPage';
+import PronunciationTrainerPage from '../features/pronunciation/PronunciationTrainerPage';
 
 export default function App() {
   const settings = useSettings();
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="/kurs/lesetest" element={<ReadingTestPage />} />
           <Route path="/kurs/lektion/:id" element={<LessonPage />} />
           <Route path="/nachschlagen/grammatik" element={<GrammarPage />} />
+          <Route path="/nachschlagen/aussprache" element={<PronunciationTrainerPage />} />
           <Route path="/woerter" element={<VocabPage />} />
           <Route path="/woerter/thema/:id" element={<TopicPage />} />
           <Route path="/woerter/lernen" element={<StudyPage />} />

@@ -28,6 +28,13 @@ export default function ReferencePage() {
             <div className="text-sm text-muted">Kyrillisch tippen lernen – phonetisch oder ЙЦУКЕН</div>
           </Card>
         </Link>
+        <Link to="/nachschlagen/aussprache">
+          <Card className="h-full hover:bg-surface-2">
+            <div className="text-2xl">🎙</div>
+            <div className="font-semibold">Aussprache-Trainer</div>
+            <div className="text-sm text-muted">Schwierige Laute üben, mit Spracherkennung und Tipps</div>
+          </Card>
+        </Link>
         <Link to="/nachschlagen/grammatik">
           <Card className="h-full hover:bg-surface-2">
             <div className="text-2xl">📐</div>

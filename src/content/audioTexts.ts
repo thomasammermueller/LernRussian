@@ -2,6 +2,7 @@ import { ALPHABET, READING_WORDS } from './alphabet';
 import { ALL_LESSONS } from './lessons';
 import { exerciseSolution } from './lessons/util';
 import { BUILTIN_WORDS } from './vocab';
+import { SOUND_GROUPS } from './pronunciation';
 import { audioKey, ttsText, type Voice } from '../core/audioKey';
 
 export interface AudioText {
@@ -39,6 +40,7 @@ export function collectAudioTexts(): AudioText[] {
       if (ex.type === 'match') ex.pairs.forEach(([ru]) => add(ru));
     }
   }
+  SOUND_GROUPS.forEach((g) => g.items.forEach((w) => add(w)));
   add('Приве́т! Как дела́?'); // speech-rate preview in settings
   return [...out.values()].sort((a, b) => a.key.localeCompare(b.key));
 }

@@ -3,7 +3,14 @@
 Persönliche Russisch-Lern-App (A1–A2) für deutschsprachige Erwachsene ohne Vorkenntnisse.
 Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem **iPhone (als installierte Web-App)** und im **Browser**, komplett **offline-fähig**.
 
-## Stand: v0.3 – Alphabet, Vokabeltrainer & Einheit 1
+## Stand: v0.4 – Alphabet, Vokabeltrainer, Einheit 1, Aussprache & Statistik
+
+**Neu in v0.4:**
+- **Spracherkennung mit Auswertung:** „Sprechen & prüfen“ in jeder Lektion und im neuen **Aussprache-Trainer** (Nachschlagen). Ergebnis in Prozent, Buchstaben grün/rot, erkannter Text und konkrete Tipps zu typischen Fehlern Deutschsprachiger (ы, р, х, ж, щ, ц, weiche Konsonanten, Betonung).
+- Zwei Erkennungen: **Safari** (eingebaut, online) und **Whisper offline** (läuft komplett auf dem Gerät, einmalig 76 MB). „Automatisch“ wählt passend zur Verbindung.
+- Aussprache-Trainer mit 8 Lautgruppen, allen Lektionssätzen und „Deine schwierigsten“.
+- **Statistik:** Lernzeit 7/30 Tage mit Tagesziel, Lernkalender (16 Wochen), Wörter im Training, Prognose fälliger Wiederholungen, schwierigste Wörter, Ø-Aussprache.
+
 
 **Neu in v0.3 – Kurs Einheit 1 „Знако́мство“ (Kennenlernen):**
 - 5 Lektionen + Checkpoint: Dialoge, neue Wörter, Grammatik, Übungen, Aussprache, Abschluss mit Kann-Satz

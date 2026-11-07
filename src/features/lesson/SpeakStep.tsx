@@ -1,10 +1,12 @@
+import { useState } from 'react';
 import { SpeakButton } from '../../ui/ui';
+import PronunciationCheck from '../pronunciation/PronunciationCheck';
 import { useRecorder } from './useRecorder';
 
 export default function SpeakStep({ sentences }: { sentences: string[] }) {
   return (
     <div className="space-y-3">
-      <p className="text-muted">Hör dir jeden Satz an, sprich ihn laut nach und vergleiche deine Aufnahme mit dem Vorbild.</p>
+      <p className="text-muted">Hör dir jeden Satz an und sprich ihn nach. Mit „Sprechen & prüfen“ wertet die Spracherkennung deine Aussprache aus, mit „Aufnehmen“ vergleichst du dich selbst mit dem Vorbild.</p>
       {sentences.map((s) => (
         <SpeakItem key={s} text={s} />
       ))}
@@ -14,6 +16,7 @@ export default function SpeakStep({ sentences }: { sentences: string[] }) {
 
 function SpeakItem({ text }: { text: string }) {
   const r = useRecorder();
+  const [check, setCheck] = useState(false);
   return (
     <div className="space-y-2 rounded-2xl border border-line bg-surface p-4">
       <div className="flex items-center gap-2">
@@ -37,8 +40,12 @@ function SpeakItem({ text }: { text: string }) {
             </button>
           )}
           {r.error && <span className="text-sm text-bad">{r.error}</span>}
+          <button onClick={() => setCheck(!check)} aria-expanded={check} className="rounded-full bg-accent-soft px-4 py-2 text-sm font-semibold text-accent">
+            ✓ Aussprache prüfen
+          </button>
         </div>
       )}
+      {check && <PronunciationCheck text={text} />}
     </div>
   );
 }

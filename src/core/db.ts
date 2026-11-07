@@ -69,6 +69,15 @@ export interface UserWord extends Word {
   deleted?: boolean;
 }
 
+export interface PronunciationRecord {
+  id: string; // `${text}@${at}`
+  text: string;
+  heard: string;
+  score: number;
+  engine: string;
+  at: number;
+}
+
 export interface Setting {
   key: string;
   value: unknown;
@@ -83,6 +92,7 @@ export class LernDB extends Dexie {
   reviews!: EntityTable<ReviewRecord, 'id'>;
   userSets!: EntityTable<UserSet, 'id'>;
   userWords!: EntityTable<UserWord, 'id'>;
+  pronunciations!: EntityTable<PronunciationRecord, 'id'>;
 
   constructor() {
     super('lernrussian');
@@ -97,6 +107,9 @@ export class LernDB extends Dexie {
       reviews: 'id, cardId, at',
       userSets: 'id, updatedAt',
       userWords: 'id, topic, updatedAt',
+    });
+    this.version(3).stores({
+      pronunciations: 'id, text, at',
     });
   }
 }
@@ -188,6 +201,7 @@ export interface Backup {
   reviews?: ReviewRecord[];
   userSets?: UserSet[];
   userWords?: UserWord[];
+  pronunciations?: PronunciationRecord[];
 }
 
 export async function exportBackup(): Promise<Backup> {
@@ -203,13 +217,14 @@ export async function exportBackup(): Promise<Backup> {
     reviews: await db.reviews.toArray(),
     userSets: await db.userSets.toArray(),
     userWords: await db.userWords.toArray(),
+    pronunciations: await db.pronunciations.toArray(),
   };
 }
 
 /** Merges a backup into the local database: the newer record wins. */
 export async function importBackup(data: Backup) {
   if (data?.app !== 'lernrussian') throw new Error('Das ist keine LernRussian-Sicherung.');
-  const tables = [db.letters, db.lessons, db.activity, db.settings, db.cards, db.reviews, db.userSets, db.userWords];
+  const tables = [db.letters, db.lessons, db.activity, db.settings, db.cards, db.reviews, db.userSets, db.userWords, db.pronunciations];
   await db.transaction('rw', tables, async () => {
     const merge = async <T extends { updatedAt: number }>(table: { get(k: string): Promise<T | undefined>; put(r: T): Promise<unknown> }, rows: T[] | undefined, key: (r: T) => string) => {
       for (const row of rows ?? []) {
@@ -224,6 +239,7 @@ export async function importBackup(data: Backup) {
     await merge<UserSet>(db.userSets, data.userSets, (r) => r.id);
     await merge<UserWord>(db.userWords, data.userWords, (r) => r.id);
     if (data.reviews?.length) await db.reviews.bulkPut(data.reviews);
+    if (data.pronunciations?.length) await db.pronunciations.bulkPut(data.pronunciations);
     for (const s of data.settings ?? []) await db.settings.put(s);
   });
 }

@@ -10,6 +10,7 @@ export interface Settings {
   name: string;
   newPerDay: number;
   listenMode: boolean;
+  speechEngine: 'auto' | 'webspeech' | 'whisper';
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -20,6 +21,7 @@ export const DEFAULT_SETTINGS: Settings = {
   name: '',
   newPerDay: 10,
   listenMode: false,
+  speechEngine: 'auto',
 };
 
 export function useSettings(): Settings {
