@@ -1,64 +1,59 @@
 # LernRussian
 
-Persönliche Russisch-Lern-App (A1–A2) für deutschsprachige Erwachsene ohne Vorkenntnisse.
+Persönliche Russisch-Lern-App von **null bis A2** für deutschsprachige Erwachsene.
 Ziel: Babbel/Duolingo-Abo ersetzen – **0 € laufende Kosten**, läuft auf dem **iPhone (als installierte Web-App)** und im **Browser**, komplett **offline-fähig**.
 
-## Stand: v0.5 – Einheiten 1–2, Vokabeltrainer, Aussprache, Statistik, Sync & Erinnerung
+## Was die App kann (v2.0)
 
-**Neu in v0.5:**
-- **Onboarding** beim ersten Start: Name, Lernziel (sortiert die Wortschatz-Themen), Tagesziel, Erinnerung
-- **Tägliche Erinnerung** als wiederkehrender Kalendertermin (.ics) mit Hinweis und Link zur App – kein Server nötig
-- **Automatischer Abgleich** zwischen Geräten über ein privates GitHub Gist (Token mit Recht `gist`): beim Start, alle 5 Minuten, beim Wechsel in den Hintergrund und sobald wieder Internet da ist. Zusammenführung: neuester Datensatz gewinnt, Wiederholungen werden vereinigt, Lernzeit pro Tag als Maximum
-- Hinweis auf „Heute“, wenn der Lernstand länger nicht gesichert wurde
+| Bereich | Inhalt |
+|---|---|
+| **Kurs** | Alphabet (Stufe 0) + **16 Einheiten A1–A2 mit 96 Lektionen** (je 5 Lektionen + Checkpoint): Dialog, neue Wörter, Grammatik, Übungen, Aussprache, Abschluss mit Kann-Satz |
+| **Dialog-Player** | Satz für Satz, Wiederholen/Schleife, langsames Tempo, Übersetzung, Lautschrift, Erklärungen, Nachsprech-Modus |
+| **Übungen** | Auswahl (auch Hörverstehen), Zuordnen, Lückentext, Satzbau, Übersetzen, Diktat – mit In-App-Tastatur (phonetisch / ЙЦУКЕН) |
+| **Vokabeltrainer** | ~950 Wörter in 10 Themen + 16 Kursthemen, Wiederholung nach **FSRS**, RU→DE und DE→RU (tippen), Hörmodus, eigene Sets, **CSV-Import/-Export** |
+| **Alphabet** | 33 Buchstaben in 4 Lerngruppen, Schreibübung (Druckschrift) mit Bewertung, Tastatur-Trainer |
+| **Aussprache** | Spracherkennung (Safari online oder **Whisper offline im Browser**), Bewertung, Tipps zu typischen Fehlern Deutschsprachiger, Aussprache-Trainer mit Lautgruppen |
+| **Audio** | **2 144 Aufnahmen** (Piper TTS, Frauen- und Männerstimme, 21 MB) – offline verfügbar |
+| **Fortschritt** | Lernzeit, Streak, Lernkalender, Wortschatz-Kurve, fällige Wiederholungen, schwierigste Wörter, Aussprache-Ø |
+| **Alltag** | Onboarding (Lernziel, Tagesziel), tägliche Erinnerung als Kalendertermin, **Sync zwischen Geräten** über privates GitHub Gist, Backup-Datei |
 
+### Kursübersicht
 
-**Neu: Einheit 5 „Го́род“ (In der Stadt)** – Orte mit в/на + Präpositiv, nach dem Weg fragen, где/куда́ (Präpositiv/Akkusativ), идти́ und е́хать, Verkehrsmittel, Stadtausflug. 30 neue Kurswörter.
+| | Einheit | Grammatik-Schwerpunkte |
+|---|---|---|
+| 0 | Alphabet | Buchstaben, Betonung, Lesen |
+| A1 · 1 | Знако́мство – Kennenlernen | ты/вы, kein „sein“, e-/i-Konjugation |
+| A1 · 2 | Семья́ – Familie | Genus, мой/моя́, у меня́ есть, Alter, Plural |
+| A1 · 3 | Чи́сла и вре́мя – Zahlen & Zeit | Zahlen bis 100, Uhrzeit, в + Wochentag |
+| A1 · 4 | Еда́ – Essen & Café | Akkusativ, хоте́ть, люби́ть, есть/пить |
+| A1 · 5 | Го́род – Stadt | Präpositiv, где/куда́, идти́/е́хать |
+| A1 · 6 | Поку́пки – Einkaufen | Adjektive, Genitiv, Zahlen bis 1000 |
+| A1 · 7 | Мой день – Alltag | Reflexivverben, Vergangenheit |
+| A1 · 8 | Путеше́ствие – Reisen | Zukunft, Reise-Präpositionen |
+| A2 · 9 | Здоро́вье – Gesundheit | Dativ, нра́виться, на́до/нельзя́ |
+| A2 · 10 | Рабо́та и учёба – Arbeit & Studium | Instrumental, **Verbaspekte** |
+| A2 · 11 | Дом – Wohnen | Ortspräpositionen, Genitiv Plural |
+| A2 · 12 | Свобо́дное вре́мя – Freizeit | Bewegungsverben mit Präfixen, ходи́ть/е́здить |
+| A2 · 13 | Пого́да – Wetter | Unpersönliche Sätze, Adjektivdeklination |
+| A2 · 14 | Пра́здники – Feste | Datum, Glückwünsche, Plural-Fälle |
+| A2 · 15 | Се́рвис – Dienstleistungen | Imperativ, Komparativ, höfliche Bitten |
+| A2 · 16 | Расска́з – Erzählen | Nebensätze, кото́рый, е́сли, Konjunktiv |
 
-**Einheit 4 „Еда́“ (Essen & Café)** – Bestellen im Café und Restaurant, хоте́ть, люби́ть, есть/пить, Akkusativ, с + Instrumental und без + Genitiv als feste Wendungen, Tischsitten. 39 neue Kurswörter.
+> **Hinweis:** Alle Inhalte (Dialoge, Grammatik, Übungen, Vokabeln) wurden von Claude erstellt und durch automatische Tests geprüft (Betonungszeichen, Lösbarkeit, Lautschrift), aber **nicht von einem Muttersprachler korrigiert**. Gelegentliche Stichproben mit einem Tandempartner sind empfehlenswert.
 
-**Einheit 3 „Чи́сла и вре́мя“ (Zahlen & Zeit)** – Zahlen 0–100, Preise (рубль/рубля́/рубле́й), Uhrzeit (час/часа́/часо́в), Termine (в сре́ду, в два часа́ дня), Verabredungen und Tageszeiten. 49 neue Kurswörter.
+## Auf dem iPhone nutzen
 
-**Einheit 2 „Семья́“ (Familie & Menschen)** – 5 Lektionen + Checkpoint: Genus, мой/моя́/моё, у меня́ есть / нет, Berufe und в + Ort, Alter (год/го́да/лет), Plural. 47 neue Kurswörter, 105 neue Aufnahmen.
-
-**Neu in v0.4:**
-- **Spracherkennung mit Auswertung:** „Sprechen & prüfen“ in jeder Lektion und im neuen **Aussprache-Trainer** (Nachschlagen). Ergebnis in Prozent, Buchstaben grün/rot, erkannter Text und konkrete Tipps zu typischen Fehlern Deutschsprachiger (ы, р, х, ж, щ, ц, weiche Konsonanten, Betonung).
-- Zwei Erkennungen: **Safari** (eingebaut, online) und **Whisper offline** (läuft komplett auf dem Gerät, einmalig 76 MB). „Automatisch“ wählt passend zur Verbindung.
-- Aussprache-Trainer mit 8 Lautgruppen, allen Lektionssätzen und „Deine schwierigsten“.
-- **Statistik:** Lernzeit 7/30 Tage mit Tagesziel, Lernkalender (16 Wochen), Wörter im Training, Prognose fälliger Wiederholungen, schwierigste Wörter, Ø-Aussprache.
-
-
-**Neu in v0.3 – Kurs Einheit 1 „Знако́мство“ (Kennenlernen):**
-- 5 Lektionen + Checkpoint: Dialoge, neue Wörter, Grammatik, Übungen, Aussprache, Abschluss mit Kann-Satz
-- **Dialog-Player:** Satz für Satz, Satz wiederholen/in Schleife, langsames Tempo, Übersetzung und Lautschrift ein-/ausblendbar, Erklärung pro Satz, Nachsprech-Modus mit Pausen
-- **Übungstypen:** Auswahl (auch Hörverstehen), Zuordnen, Lückentext, Satzbau, Übersetzen, Diktat
-- **Aussprache:** Vorbild anhören, sich selbst aufnehmen und vergleichen
-- Wörter einer Lektion wandern nach dem Abschluss automatisch in den Vokabeltrainer
-- **Echte Audiodateien** für alle 422 Wörter und Sätze (Piper TTS, weibliche/männliche Stimme), offline verfügbar (2,6 MB)
-- Grammatik-Übersicht unter „Nachschlagen“
-
-
-**Neu in v0.2 – Vokabeltrainer (Tab „Wörter“):**
-- 10 Themen mit 231 Wörtern (Begrüßung, Zahlen, Zeit, Familie, Essen, Stadt, Reisen, Farben, Verben, kleine Wörter) – alle mit Betonung, Lautschrift, teils Beispielsatz
-- Wiederholung nach **FSRS** (`ts-fsrs`): Nochmal/Schwer/Gut/Leicht mit Intervall-Vorschau, Tageslimit für neue Wörter
-- Abfrage Russisch → Deutsch (aufdecken) und – sobald ein Wort sitzt – Deutsch → Russisch (tippen, automatische Bewertungsempfehlung)
-- Hörmodus: das russische Wort wird nur vorgespielt
-- Eigene Sets, Wörter hinzufügen/löschen, **CSV-Import** (mit Vorschau, Duplikat- und Fehlerprüfung) und **CSV-Export** mit Lernstatus
-- Statistik: Wörter sicher/in Arbeit, Wiederholungen und Trefferquote der letzten 30 Tage; Sicherung enthält jetzt auch den Vokabel-Lernstand
-
-**Aus v0.1:**
-
-- **Kurs → Stufe 0:** 4 Alphabet-Lektionen (je Buchstabe: Laut, Erklärung, Beispielwörter mit Aussprache) + Test, Lesetest 0.T
-- **Nachschlagen → Alphabet:** alle 33 Buchstaben, Schreibübung in Druckschrift (mit Vorlage / nur Startpunkte / frei) inkl. Bewertung
-- **Tastatur-Trainer:** In-App-Tastatur (phonetisch oder ЙЦУКЕН) bzw. Systemtastatur; am Computer Live-Transliteration (`privet` → `привет`)
-- **Heute / Fortschritt:** Tagesziel, Streak, Lernzeit-Tracking, 7-Tage-Diagramm, Einstellungen, Backup-Export/-Import
-- Offline-fähig (PWA), Hell/Dunkel-Modus, Aussprache über die russische Systemstimme
+1. Diesen Branch nach `main` übernehmen.
+2. Einmalig auf GitHub unter *Settings → Pages → Source* „**GitHub Actions**“ wählen. Danach baut und veröffentlicht jeder Push auf `main` die App automatisch (`.github/workflows/deploy.yml`).
+3. Die Seite in **Safari** öffnen → Teilen → „**Zum Home-Bildschirm**“.
+4. Optional: unter *Fortschritt → Einstellungen* Sync (GitHub-Token mit Recht `gist`), Erinnerung und Offline-Spracherkennung einrichten.
 
 ## Entwicklung
 
 ```bash
 npm install
 npm run dev      # Entwicklungsserver
-npm test         # Unit-Tests
+npm test         # Unit-Tests (Inhalte, Logik, Sync)
 npm run build    # Produktions-Build nach dist/
 ```
 
@@ -72,9 +67,9 @@ npx vite-node tools/tts/collect.ts
 python3 tools/tts/generate.py --voices <ordner>
 ```
 
-**Veröffentlichen:** Einmalig im Repository unter *Settings → Pages → Source* „GitHub Actions“ wählen. Danach baut und veröffentlicht jeder Push auf `main` die App automatisch (`.github/workflows/deploy.yml`).
+Aussprachekorrekturen für die Sprachsynthese (stumme Buchstaben, unbetonte Präpositionen) stehen in `src/core/audioKey.ts`.
 
-**Auf dem iPhone:** Seite in Safari öffnen → Teilen → „Zum Home-Bildschirm“. Für die Aussprache in iOS unter *Einstellungen → Bedienungshilfen → Gesprochene Inhalte → Stimmen → Russisch* eine Stimme (z. B. Milena) laden.
+**Inhalte erweitern:** Lektionen liegen in `src/content/lessons/unitN.ts`, Vokabeln in `src/content/vocab.ts`. Die Tests prüfen u. a. Betonungszeichen, Lösbarkeit aller Übungen, bekannte Sprecher, Lautschrift und Audio-Vollständigkeit.
 
 ## Konzept
 
@@ -84,14 +79,9 @@ python3 tools/tts/generate.py --voices <ordner>
 | 2 | [Navigation & Wireframes](docs/02-navigation-und-wireframes.md) |
 | 3 | [Technik, Frameworks & APIs](docs/03-technik.md) |
 | 4a | [Inhaltliche Struktur & Progression A1–A2](docs/04-inhalte-und-progression.md) |
-| 4b | [Beispiel-Lektionsreihe: Einheit 1 „Знакомство“](docs/05-beispiel-lektionsreihe.md) |
-| 5 | [Zeitplan MVP & Folgeversionen](docs/06-zeitplan.md) |
+| 4b | [Beispiel-Lektionsreihe: Einheit 1](docs/05-beispiel-lektionsreihe.md) |
+| 5 | [Zeitplan & Stand](docs/06-zeitplan.md) |
 
-## Kurzfassung
+## Technik in Kürze
 
-- **Plattform:** Progressive Web App (React + TypeScript + Vite), auf iOS per „Zum Home-Bildschirm“ installiert. Kein App Store, kein Developer-Account.
-- **Hosting:** GitHub Pages (kostenlos).
-- **Daten:** lokal im Gerät (IndexedDB), Backup/Sync über JSON-Datei bzw. optional später über einen kostenlosen Cloud-Tarif.
-- **Audio:** vorab generiert mit freier Sprachsynthese (Silero / Piper) + freie Muttersprachler-Aufnahmen (Lingua Libre, Tatoeba), alles offline gecacht.
-- **Wiederholung:** FSRS-Algorithmus (`ts-fsrs`, Open Source).
-- **Aussprache:** Spracherkennung im Browser (Web Speech API) bzw. Whisper lokal im Browser als Fallback.
+React 19 + TypeScript + Vite · Tailwind CSS · PWA (vite-plugin-pwa/Workbox) · Dexie (IndexedDB) · ts-fsrs · Papa Parse · transformers.js (Whisper) · Piper TTS · Vitest + Playwright · GitHub Pages

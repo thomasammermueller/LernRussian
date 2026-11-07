@@ -13,9 +13,10 @@ import { UNIT12 } from './unit12';
 import { UNIT13 } from './unit13';
 import { UNIT14 } from './unit14';
 import { UNIT15 } from './unit15';
+import { UNIT16 } from './unit16';
 import type { Lesson, Unit } from './types';
 
-export const UNITS_CONTENT: Unit[] = [UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7, UNIT8, UNIT9, UNIT10, UNIT11, UNIT12, UNIT13, UNIT14, UNIT15];
+export const UNITS_CONTENT: Unit[] = [UNIT1, UNIT2, UNIT3, UNIT4, UNIT5, UNIT6, UNIT7, UNIT8, UNIT9, UNIT10, UNIT11, UNIT12, UNIT13, UNIT14, UNIT15, UNIT16];
 export const ALL_LESSONS: Lesson[] = UNITS_CONTENT.flatMap((u) => u.lessons);
 export const lessonById = (id: string) => ALL_LESSONS.find((l) => l.id === id);
 export type { Lesson, Unit } from './types';

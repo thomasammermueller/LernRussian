@@ -1,5 +1,27 @@
 # 5. Zeitplan: MVP & Folgeversionen
 
+## Stand (November 2026): alle geplanten Meilensteine umgesetzt
+
+| Version | Inhalt | Status |
+|---|---|---|
+| v0.1 | Gerüst, PWA, Alphabet, Schreibübung, Tastatur | ✅ |
+| v0.2 | Vokabeltrainer (FSRS), Themen, CSV | ✅ |
+| v0.3 | Kurs-Engine, Dialog-Player, Übungen, Audio-Pipeline (Piper) | ✅ |
+| v0.4 | Spracherkennung (Safari / Whisper), Aussprache-Trainer, Statistik | ✅ |
+| v0.5 | Onboarding, Kalender-Erinnerung, Sync über GitHub Gist | ✅ |
+| v1.0 | A1 komplett: Einheiten 1–8 | ✅ |
+| v2.0 | A2 komplett: Einheiten 9–16 | ✅ |
+
+**Bewusst noch offen** (mögliche nächste Schritte):
+- Kyrillische **Schreibschrift** (пропи́си) als Zusatzmodul – bisher nur Druckschrift.
+- **Lesetexte** mit Tipp-Übersetzung, B1-Inhalte.
+- **Web Push**-Erinnerung (braucht einen kleinen Server, z. B. Cloudflare Worker) – derzeit Kalendertermin.
+- Prüfung der Inhalte durch einen Muttersprachler.
+
+---
+
+Ursprünglicher Plan:
+
 ## Annahmen
 - **Entwicklung:** Claude schreibt Code und Inhalte in Sessions; du testest auf dem iPhone und gibst Feedback.
 - **Dein Aufwand:** ca. 3–5 Std./Woche für Testen, Feedback, Freigaben – plus deine eigene Lernzeit.
