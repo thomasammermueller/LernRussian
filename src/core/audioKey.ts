@@ -19,6 +19,10 @@ const TTS_FIXES: [RegExp, string][] = [
   [/здра́?вствуй/gi, 'здра́ствуй'],
   [/шестьдеся́?т/gi, 'шыздися́т'],
   [/коне́?чно/gi, 'коне́шно'],
+  // hundreds: unstressed vowels are reduced, the soft sign is not pronounced
+  [/пятьсо́?т/gi, 'питсо́т'],
+  [/шестьсо́?т/gi, 'шыссо́т'],
+  [/девятьсо́?т/gi, 'дивитсо́т'],
 ];
 
 /** Unstressed one-syllable prepositions are attached to the next word, otherwise the phonemizer stresses them. */

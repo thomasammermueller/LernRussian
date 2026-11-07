@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import manifest from '../src/content/audioManifest.json';
 import { collectAudioTexts } from '../src/content/audioTexts';
-import { ALL_LESSONS } from '../src/content/lessons';
+import { ALL_LESSONS, UNITS_CONTENT } from '../src/content/lessons';
 import { exerciseSolution } from '../src/content/lessons/util';
 import { wordByRu } from '../src/content/vocab';
 import { audioKey, ttsText } from '../src/core/audioKey';
@@ -12,7 +12,8 @@ import { lessonSteps } from '../src/features/lesson/LessonPage';
 describe('lessons', () => {
   it('have unique ids and a checkpoint per unit', () => {
     expect(new Set(ALL_LESSONS.map((l) => l.id)).size).toBe(ALL_LESSONS.length);
-    expect(ALL_LESSONS.filter((l) => l.checkpoint).map((l) => l.id)).toEqual(['1.C', '2.C', '3.C', '4.C', '5.C']);
+    expect(ALL_LESSONS.filter((l) => l.checkpoint).map((l) => l.id)).toEqual(UNITS_CONTENT.map((u) => `${u.n}.C`));
+    for (const u of UNITS_CONTENT) expect(u.lessons.every((l) => l.unit === u.n), `unit ${u.n}`).toBe(true);
   });
   it('only reference vocabulary that exists in the word lists', () => {
     for (const l of ALL_LESSONS) for (const ru of l.vocab) expect(wordByRu(ru), `${l.id}: ${ru}`).toBeDefined();
