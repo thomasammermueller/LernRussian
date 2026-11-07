@@ -103,8 +103,8 @@ describe('csv', () => {
     const { fresh, duplicates } = dedupe(
       [
         { ru: 'привет', de: 'hallo', line: 1 },
-        { ru: 'кни́га', de: 'Buch', line: 2 },
-        { ru: 'книга', de: 'Buch', line: 3 },
+        { ru: 'черни́ка', de: 'Heidelbeere', line: 2 },
+        { ru: 'черника', de: 'Heidelbeere', line: 3 },
       ],
       BUILTIN_WORDS,
     );
