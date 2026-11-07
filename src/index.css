@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --surface-2: #efece4;
+  --ink: #1d232b;
+  --muted: #5f6873;
+  --line: #ddd8cc;
+  --accent: #1f3a5f;
+  --accent-ink: #ffffff;
+  --accent-soft: #dde6f2;
+  --gold: #b9832b;
+  --ok: #2f7d4f;
+  --ok-soft: #dcefe3;
+  --warn: #a8651a;
+  --warn-soft: #f6e7d2;
+  --bad: #b23b3b;
+  --bad-soft: #f5dcdc;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #12161b;
+    --surface: #1b2128;
+    --surface-2: #232b34;
+    --ink: #e9edf1;
+    --muted: #9aa5b1;
+    --line: #2f3944;
+    --accent: #8fb3e0;
+    --accent-ink: #0e1620;
+    --accent-soft: #233548;
+    --gold: #e0b45f;
+    --ok: #6fc394;
+    --ok-soft: #1d3428;
+    --warn: #e2a65a;
+    --warn-soft: #3a2c1a;
+    --bad: #e38080;
+    --bad-soft: #3c2222;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #12161b;
+  --surface: #1b2128;
+  --surface-2: #232b34;
+  --ink: #e9edf1;
+  --muted: #9aa5b1;
+  --line: #2f3944;
+  --accent: #8fb3e0;
+  --accent-ink: #0e1620;
+  --accent-soft: #233548;
+  --gold: #e0b45f;
+  --ok: #6fc394;
+  --ok-soft: #1d3428;
+  --warn: #e2a65a;
+  --warn-soft: #3a2c1a;
+  --bad: #e38080;
+  --bad-soft: #3c2222;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-gold: var(--gold);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
